@@ -1,0 +1,98 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "QE Input",
+	"patterns": [
+		{
+			"include": "#namelists"
+		},
+		{
+			"include": "#cards"
+		},
+		{
+			"include": "#tags"
+		},
+		{
+			"include": "#constants"
+		},
+		{
+			"include": "#strings"
+		}
+	],
+	"repository": {
+		"namelists": {
+			"patterns": [{
+				"name": "entity.name.section.namelists.espresso-in",
+				"match": "&\\b(?i)(control|system|electrons|ions|cell|fcp)\\b"
+			}]
+		},
+		"cards": {
+			"patterns": [{
+				"name": "entity.name.section.cards.espresso-in",
+				"match": "\\b(?i)(atomic_species|atomic_positions|k_points|cell_parameters|occupations|constraints|atomic_forces)\\b"
+			}]
+		},
+		"tags": {
+			"patterns": [
+				{
+				"name": "entity.name.tags.espresso-in",
+				"match": "\\b(calculation|title|verbosity|restart_mode|wf_collect|nstep|iprint|tstress|tprnfor|dt|outdir|wfcdir|prefix|lkpoint_dir|max_seconds|etot_conv_thr|forc_conv_thr|disk_io|pseudo_dir|tefield|dipfield|lelfield|nberrycyc|lorbm|lberry|gdir|nppstr|lfcpopt|monopole|ibrav|A|B|C|cosAB|cosAC|cosBC|nat|ntyp|nbnd|tot_charge|tot_magnetization|ecutwfc|ecutrho|ecutfock|nr1|nr2|nr3|nr1s|nr2s|nr3s|nosym|nosym_evc|noinv|no_t_rev|force_symmorphic|use_all_frac|occupations|one_atom_occupations|starting_spin_angle|degauss|smearing|nspin|noncolin|ecfixed|qcutz|q2sigma|input_dft|exx_fraction|screening_parameter|exxdiv_treatment|x_gamma_extrapolation|ecutvcut|nqx1|nqx2|nqx3|lda_plus_u|lda_plus_u_kind|U_projection_type|edir|emaxpos|eopreg|eamp|constrained_magnetization|lambda|report|lspinorb|assume_isolated|esm_bc|esm_w|esm_efield|esm_nfit|fcp_mu|vdw_corr|london|london_s6|london_rcut|ts_vdw_econv_thr|ts_vdw_isolated|xdm|xdm_a1|xdm_a2|space_group|uniqueb|origin_choice|rhombohedral|zmon|realxz|block|block_1|block_2|block_height|electron_maxstep|scf_must_converge|conv_thr|adaptive_thr|conv_thr_init|conv_thr_multi|mixing_mode|mixing_beta|mixing_ndim|mixing_fixed_ns|diagonalization|ortho_para|diago_thr_init|diago_cg_maxiter|diago_david_ndim|diago_full_acc|efield|efield_phase|startingpot|startingwfc|tqr|ion_dynamics|ion_positions|pot_extrapolation|wfc_extrapolation|remove_rigid_rot|ion_temperature|tempw|tolp|delta_t|nraise|refold_pos|upscale|bfgs_ndim|trust_radius_max|trust_radius_min|trust_radius_ini|w_1|w_2|cell_dynamics|press|wmass|cell_factor|press_conv_thr|cell_dofree)(\\b|\\=)"
+				},
+				{
+					"name": "entity.name.tags.tags-with-1-params.espresso-in",
+					"match": "\\b(celldm|starting_magnetization|Hubbard_U|Hubbard_J0|Hubbard_alpha|Hubbard_beta|angle1|angle2|fixed_magnetization|london_c6|london_rvdw|efield_cart)\\(\\d*\\)"
+				},
+				{
+					"name": "entity.name.tags.tags-with-2-params.espresso-in",
+					"match": "\\b(Hubbard_J)\\(\\d*,\\d*\\)"
+				},
+				{
+					"name": "entity.name.tags.tags-with-3-params.espresso-in",
+					"match": "\\b(starting_ns_eigenvalue)\\(\\d*,\\d*,\\d*\\)"
+				}
+			]
+		},
+		"constants": {
+			"patterns": [
+				{
+					"name": "constant.numeric.espresso-in",
+					"match": "\\b\\d+\\.?(?i)(d-?|d?)\\d*,?\\b"
+				},
+				{
+					"name": "constant.language.bool.espresso-in",
+					"match": "(?i)(\\.true\\.|\\.false\\.)"
+				},
+				{
+					"name": "variable.parameter.atom-type.espresso-in",
+					"match": "\\b(?i)(H|He|Li|Be|B|C|N|O|F|Ne|Na|Mg|Al|Si|P|S|Cl|Ar|K|Ca|Sc|Ti|V|Cr|Mn|Fe|Co|Ni|Cu|Zn|Ga|Ge|As|Se|Br|Kr|Rb|Sr|Y|Zr|Nb|Mo|Tc|Ru|Rh|Pd|Ag|Cd|In|Sn|Sb|Te|I|Xe|Cs|Ba|La|Ce|Pr|Nd|Pm|Sm|Eu|Gd|Tb|Dy|Ho|Er|Tm|Yb|Lu|Hf|Ta|W|Re|Os|Ir|Pt|Au|Hg|Tl|Pb|Bi|Po|At|Rn|Fr|Ra|Ac|Th|Pa|U|Np|Pu|Am|Cm|Bk|Cf|Es|Fm|Md|No|Lr|Rf|Db|Sg|Bh|Hs|Mt|Ds|Rg|Cn|Nh|Fl|Mc|Lv|Ts|Og)\\b"
+				},
+				{
+					"name": "variable.parameter.unit.espresso-in",
+					"match": "\\((?i)(alat|bohr|angstrom|crystal|crystal_sg)\\)"
+				},
+				{
+					"name": "variable.parameter.kpoints.espresso-in",
+					"match": "\\b(?i)(tpiba|automatic|crystal|gamma|tpiba_b|crystal_b|tpiba_c|crystal_c)\\b"
+				}
+			]
+		},
+		"strings": {
+			"patterns": [
+				{
+					"name": "string.quoted.single.espresso-in",
+					"begin": "'",
+					"end": "'"
+				},
+				{
+					"name": "string.quoted.double.espresso-in",
+					"begin": "\"",
+					"end": "\""
+				},
+				{
+					"name": "constant.character.escape.espresso-in",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.espresso-in"
+}

@@ -1,0 +1,25 @@
+{
+    "name": "qe-syntax",
+    "displayName": "QUANTUM ESPRESSO Syntax",
+    "description": "Syntax highlighting for the QUANTUM ESPRESSO files.",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.64.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "espresso-in",
+            "aliases": ["QE Input", "espresso-in"],
+            "extensions": [".in"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "espresso-in",
+            "scopeName": "source.espresso-in",
+            "path": "./syntaxes/espresso-in.tmLanguage.json"
+        }]
+    }
+}
