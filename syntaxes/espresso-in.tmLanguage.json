@@ -3,6 +3,12 @@
 	"name": "QE Input",
 	"patterns": [
 		{
+			"include": "#namelist-control"
+		},
+		{
+			"include": "#card-atomic_species"
+		},
+		{
 			"include": "#namelists"
 		},
 		{
@@ -19,6 +25,30 @@
 		}
 	],
 	"repository": {
+		"namelist-control": {
+			"patterns": [{
+				"begin": "^\\s*&(?i)CONTROL\\s*$",
+				"beginCaptures": {
+					"0": { "name": "entity.name.tag.header.namelist-control.pwx.espresso-in" }
+				},
+				"end": "^\\s*\/\\s*$",
+				"name": "entity.name.tag.content.namelist-control.pwx.espresso-in"
+			}]
+		},
+		"card-atomic_species": {
+			"patterns": [{
+				"begin": "^\\s*(?i)atomic_species\\s*$",
+				"beginCaptures": {
+					"0": { "name": "entity.name.tag.header.card-atomic_species.pwx.espresso-in" }
+				},
+				"while": "(^\\s*)(H|He|Li|Be|B|C|N|O|F|Ne|Na|Mg|Al|Si|P|S|Cl|Ar|K|Ca|Sc|Ti|V|Cr|Mn|Fe|Co|Ni|Cu|Zn|Ga|Ge|As|Se|Br|Kr|Rb|Sr|Y|Zr|Nb|Mo|Tc|Ru|Rh|Pd|Ag|Cd|In|Sn|Sb|Te|I|Xe|Cs|Ba|La|Ce|Pr|Nd|Pm|Sm|Eu|Gd|Tb|Dy|Ho|Er|Tm|Yb|Lu|Hf|Ta|W|Re|Os|Ir|Pt|Au|Hg|Tl|Pb|Bi|Po|At|Rn|Fr|Ra|Ac|Th|Pa|U|Np|Pu|Am|Cm|Bk|Cf|Es|Fm|Md|No|Lr|Rf|Db|Sg|Bh|Hs|Mt|Ds|Rg|Cn|Nh|Fl|Mc|Lv|Ts|Og)(\\s+)(\\d*\\.?\\d*)(\\s+)(.+)(\\s*$)",
+				"whileCaptures": {
+					"2": { "name": "entity.other.attribute.atom-symbol.card-atomic_species.pwx.espresso-in" },
+					"4": { "name": "constant.numeric.atom-mass.card-atomic_species.pwx.espresso-in" },
+					"6": { "name": "string.pseudopot.card-atomic_species.pwx.espresso-in" }
+				}
+			}]
+		},
 		"namelists": {
 			"patterns": [{
 				"name": "entity.name.section.namelist.espresso-in",

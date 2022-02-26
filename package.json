@@ -20,6 +20,12 @@
             "language": "espresso-in",
             "scopeName": "source.espresso-in",
             "path": "./syntaxes/espresso-in.tmLanguage.json"
-        }]
+            },
+            {
+                "path": "./syntaxes/pwx-control-tags.json",
+                "scopeName": "pwx-control-tags.injection",
+                "injectTo": ["source.espresso-in"]
+            }
+        ]
     }
 }
