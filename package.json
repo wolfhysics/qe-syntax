@@ -20,6 +20,37 @@
             "language": "espresso-in",
             "scopeName": "source.espresso-in",
             "path": "./syntaxes/espresso-in.tmLanguage.json"
-        }]
+            },
+            {
+                "path": "./syntaxes/pwx-control-tags.json",
+                "scopeName": "pwx-control-tags.injection",
+                "injectTo": ["source.espresso-in"]
+            },
+            {
+                "path": "./syntaxes/pwx-system-tags.json",
+                "scopeName": "pwx-system-tags.injection",
+                "injectTo": ["source.espresso-in"]
+            },
+            {
+                "path": "./syntaxes/pwx-electrons-tags.json",
+                "scopeName": "pwx-electrons-tags.injection",
+                "injectTo": ["source.espresso-in"]
+            },
+            {
+                "path": "./syntaxes/pwx-ions-tags.json",
+                "scopeName": "pwx-ions-tags.injection",
+                "injectTo": ["source.espresso-in"]
+            },
+            {
+                "path": "./syntaxes/pwx-cell-tags.json",
+                "scopeName": "pwx-cell-tags.injection",
+                "injectTo": ["source.espresso-in"]
+            },
+            {
+                "path": "./syntaxes/pwx-fcp-tags.json",
+                "scopeName": "pwx-fcp-tags.injection",
+                "injectTo": ["source.espresso-in"]
+            }
+        ]
     }
 }

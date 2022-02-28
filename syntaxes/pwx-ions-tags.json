@@ -1,0 +1,383 @@
+{
+    "scopeName": "pwx-ions-tags.injection",
+    "injectionSelector": "L:entity.name.tag.content.namelist-ions.pwx.espresso-in",
+    "patterns": [
+        {
+            "include": "#tag-ion_positions.namelist-ions.pwx"
+        },
+        {
+            "include": "#tag-ion_velocities.namelist-ions.pwx"
+        },
+        {
+            "include": "#tag-ion_dynamics.namelist-ions.pwx"
+        },
+        {
+            "include": "#tag-pot_extrapolation.namelist-ions.pwx"
+        },
+        {
+            "include": "#tag-wfc_extrapolation.namelist-ions.pwx"
+        },
+        {
+            "include": "#tag-remove_rigid_rot.namelist-ions.pwx"
+        },
+        {
+            "include": "#tag-ion_temperature.namelist-ions.pwx"
+        },
+        {
+            "include": "#tag-tempw.namelist-ions.pwx"
+        },
+        {
+            "include": "#tag-tolp.namelist-ions.pwx"
+        },
+        {
+            "include": "#tag-delta_t.namelist-ions.pwx"
+        },
+        {
+            "include": "#tag-nraise.namelist-ions.pwx"
+        },
+        {
+            "include": "#tag-refold_pos.namelist-ions.pwx"
+        },
+        {
+            "include": "#tag-upscale.namelist-ions.pwx"
+        },
+        {
+            "include": "#tag-bfgs_ndim.namelist-ions.pwx"
+        },
+        {
+            "include": "#tag-trust_radius_max.namelist-ions.pwx"
+        },
+        {
+            "include": "#tag-trust_radius_min.namelist-ions.pwx"
+        },
+        {
+            "include": "#tag-trust_radius_ini.namelist-ions.pwx"
+        },
+        {
+            "include": "#tag-w_1.namelist-ions.pwx"
+        },
+        {
+            "include": "#tag-w_2.namelist-ions.pwx"
+        },
+        {
+            "include": "#tag-fire_alpha_init.namelist-ions.pwx"
+        },
+        {
+            "include": "#tag-fire_falpha.namelist-ions.pwx"
+        },
+        {
+            "include": "#tag-fire_nmin.namelist-ions.pwx"
+        },
+        {
+            "include": "#tag-fire_f_inc.namelist-ions.pwx"
+        },
+        {
+            "include": "#tag-fire_f_dec.namelist-ions.pwx"
+        },
+        {
+            "include": "#tag-fire_dtmax.namelist-ions.pwx"
+        }
+    ],
+    "repository": {
+        "tag-ion_positions.namelist-ions.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(ion_positions)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-ion_positions.namelist-ions.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\'(?i)(default|from_input)\\')(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "entity.other.attribute.tag-ion_positions.namelist-ions.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-ion_velocities.namelist-ions.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(ion_velocities)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-ion_velocities.namelist-ions.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\'(?i)(default|from_input)\\')(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "entity.other.attribute.tag-ion_velocities.namelist-ions.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-ion_dynamics.namelist-ions.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(ion_dynamics)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-ion_dynamics.namelist-ions.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\'(?i)(bfgs|damp|fire|verlet|langevin|langevin\\-smc|beeman)\\')(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "entity.other.attribute.tag-ion_dynamics.namelist-ions.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-pot_extrapolation.namelist-ions.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(pot_extrapolation)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-pot_extrapolation.namelist-ions.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\'(?i)(none|atomic|first_order|second_order)\\')(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "entity.other.attribute.tag-pot_extrapolation.namelist-ions.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-wfc_extrapolation.namelist-ions.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(wfc_extrapolation)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-wfc_extrapolation.namelist-ions.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\'(?i)(none|first_order|second_order)\\')(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "entity.other.attribute.tag-wfc_extrapolation.namelist-ions.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-remove_rigid_rot.namelist-ions.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(remove_rigid_rot)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-remove_rigid_rot.namelist-ions.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\.(?i)(true|false)\\.)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "entity.other.attribute.tag-remove_rigid_rot.namelist-ions.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-ion_temperature.namelist-ions.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(ion_temperature)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-ion_temperature.namelist-ions.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\'(?i)(rescaling|rescale\\-v|rescale\\-T|reduce\\-T|berendsen|andersen|svr|initial|not_controlled)\\')(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "entity.other.attribute.tag-ion_temperature.namelist-ions.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-tempw.namelist-ions.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(tempw)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-tempw.namelist-ions.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\-?\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-tempw.namelist-ions.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-tolp.namelist-ions.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(tolp)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-tolp.namelist-ions.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\-?\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-tolp.namelist-ions.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-delta_t.namelist-ions.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(delta_t)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-delta_t.namelist-ions.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\-?\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-delta_t.namelist-ions.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-nraise.namelist-ions.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(nraise)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-nraise.namelist-ions.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-nraise.namelist-ions.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-refold_pos.namelist-ions.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(refold_pos)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-refold_pos.namelist-ions.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\.(?i)(true|false)\\.)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "entity.other.attribute.tag-refold_pos.namelist-ions.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-upscale.namelist-ions.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(upscale)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-upscale.namelist-ions.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\-?\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-upscale.namelist-ions.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-bfgs_ndim.namelist-ions.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(bfgs_ndim)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-bfgs_ndim.namelist-ions.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-bfgs_ndim.namelist-ions.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-trust_radius_max.namelist-ions.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(trust_radius_max)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-trust_radius_max.namelist-ions.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\-?\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-trust_radius_max.namelist-ions.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-trust_radius_min.namelist-ions.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(trust_radius_min)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-trust_radius_min.namelist-ions.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\-?\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-trust_radius_min.namelist-ions.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-trust_radius_ini.namelist-ions.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(trust_radius_ini)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-trust_radius_ini.namelist-ions.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\-?\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-trust_radius_ini.namelist-ions.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-w_1.namelist-ions.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(w_1)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-w_1.namelist-ions.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\-?\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-w_1.namelist-ions.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-w_2.namelist-ions.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(w_2)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-w_2.namelist-ions.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\-?\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-w_2.namelist-ions.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-fire_alpha_init.namelist-ions.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(fire_alpha_init)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-fire_alpha_init.namelist-ions.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\-?\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-fire_alpha_init.namelist-ions.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-fire_falpha.namelist-ions.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(fire_falpha)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-fire_falpha.namelist-ions.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\-?\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-fire_falpha.namelist-ions.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-fire_nmin.namelist-ions.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(fire_nmin)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-fire_nmin.namelist-ions.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-fire_nmin.namelist-ions.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-fire_f_inc.namelist-ions.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(fire_f_inc)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-fire_f_inc.namelist-ions.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\-?\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-fire_f_inc.namelist-ions.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-fire_f_dec.namelist-ions.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(fire_f_dec)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-fire_f_dec.namelist-ions.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\-?\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-fire_f_dec.namelist-ions.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-fire_dtmax.namelist-ions.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(fire_dtmax)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-fire_dtmax.namelist-ions.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\-?\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-fire_dtmax.namelist-ions.pwx.espresso-in" }
+                }
+            }]
+        }
+    }
+}

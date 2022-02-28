@@ -1,0 +1,6 @@
+entity name class, entity other attribute --> turquoise (special strings: DFT-D3, smearing, etc)
+entity name tags --> dark blue (namelists and cards)
+constant numeric --> light green (any numeric values)
+constant language bool --> dark blue (anything represents true/false only)
+variable parameter --> light blue (tags)
+string --> brown (for unconstrained string like prefix, pseudopot, etc)

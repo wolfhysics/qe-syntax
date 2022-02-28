@@ -3,95 +3,279 @@
 	"name": "QE Input",
 	"patterns": [
 		{
-			"include": "#namelists"
+			"include": "#namelist-control"
 		},
 		{
-			"include": "#cards"
+			"include": "#namelist-system"
 		},
 		{
-			"include": "#tags"
+			"include": "#namelist-electrons"
 		},
 		{
-			"include": "#constants"
+			"include": "#namelist-ions"
 		},
 		{
-			"include": "#strings"
+			"include": "#namelist-cell"
+		},
+		{
+			"include": "#namelist-fcp"
+		},
+		{
+			"include": "#card-atomic_species"
+		},
+		{
+			"include": "#card-atomic_positions"
+		},
+		{
+			"include": "#card-k_points"
+		},
+		{
+			"include": "#card-additional_k_points"
+		},
+		{
+			"include": "#card-cell_parameters"
+		},
+		{
+			"include": "#card-constraints"
+		},
+		{
+			"include": "#card-occupations"
+		},
+		{
+			"include": "#card-atomic_velocities"
+		},
+		{
+			"include": "#card-atomic_forces"
 		}
 	],
 	"repository": {
-		"namelists": {
+		"namelist-control": {
 			"patterns": [{
-				"name": "entity.name.section.namelist.espresso-in",
-				"match": "&\\b(?i)(control|system|electrons|ions|cell|fcp)\\b"
+				"begin": "^\\s*&(?i)CONTROL\\s*$",
+				"beginCaptures": {
+					"0": { "name": "entity.name.tag.header.namelist-control.pwx.espresso-in" }
+				},
+				"end": "^\\s*\/\\s*$",
+				"name": "entity.name.tag.content.namelist-control.pwx.espresso-in"
 			}]
 		},
-		"cards": {
+		"namelist-system": {
 			"patterns": [{
-				"name": "entity.name.section.card.espresso-in",
-				"match": "\\b(?i)(atomic_species|atomic_positions|k_points|cell_parameters|occupations|constraints|atomic_forces)\\b"
+				"begin": "^\\s*&(?i)SYSTEM\\s*$",
+				"beginCaptures": {
+					"0": { "name": "entity.name.tag.header.namelist-system.pwx.espresso-in" }
+				},
+				"end": "^\\s*\/\\s*$",
+				"name": "entity.name.tag.content.namelist-system.pwx.espresso-in"
 			}]
 		},
-		"tags": {
+		"namelist-electrons": {
+			"patterns": [{
+				"begin": "^\\s*&(?i)ELECTRONS\\s*$",
+				"beginCaptures": {
+					"0": { "name": "entity.name.tag.header.namelist-electrons.pwx.espresso-in" }
+				},
+				"end": "^\\s*\/\\s*$",
+				"name": "entity.name.tag.content.namelist-electrons.pwx.espresso-in"
+			}]
+		},
+		"namelist-ions": {
+			"patterns": [{
+				"begin": "^\\s*&(?i)IONS\\s*$",
+				"beginCaptures": {
+					"0": { "name": "entity.name.tag.header.namelist-ions.pwx.espresso-in" }
+				},
+				"end": "^\\s*\/\\s*$",
+				"name": "entity.name.tag.content.namelist-ions.pwx.espresso-in"
+			}]
+		},
+		"namelist-cell": {
+			"patterns": [{
+				"begin": "^\\s*&(?i)CELL\\s*$",
+				"beginCaptures": {
+					"0": { "name": "entity.name.tag.header.namelist-cell.pwx.espresso-in" }
+				},
+				"end": "^\\s*\/\\s*$",
+				"name": "entity.name.tag.content.namelist-cell.pwx.espresso-in"
+			}]
+		},
+		"namelist-fcp": {
+			"patterns": [{
+				"begin": "^\\s*&(?i)FCP\\s*$",
+				"beginCaptures": {
+					"0": { "name": "entity.name.tag.header.namelist-fcp.pwx.espresso-in" }
+				},
+				"end": "^\\s*\/\\s*$",
+				"name": "entity.name.tag.content.namelist-fcp.pwx.espresso-in"
+			}]
+		},
+		"card-atomic_species": {
+			"patterns": [{
+				"begin": "^\\s*(?i)atomic_species\\s*$",
+				"beginCaptures": {
+					"0": { "name": "entity.name.tag.header.card-atomic_species.pwx.espresso-in" }
+				},
+				"while": "(^\\s*)(H|He|Li|Be|B|C|N|O|F|Ne|Na|Mg|Al|Si|P|S|Cl|Ar|K|Ca|Sc|Ti|V|Cr|Mn|Fe|Co|Ni|Cu|Zn|Ga|Ge|As|Se|Br|Kr|Rb|Sr|Y|Zr|Nb|Mo|Tc|Ru|Rh|Pd|Ag|Cd|In|Sn|Sb|Te|I|Xe|Cs|Ba|La|Ce|Pr|Nd|Pm|Sm|Eu|Gd|Tb|Dy|Ho|Er|Tm|Yb|Lu|Hf|Ta|W|Re|Os|Ir|Pt|Au|Hg|Tl|Pb|Bi|Po|At|Rn|Fr|Ra|Ac|Th|Pa|U|Np|Pu|Am|Cm|Bk|Cf|Es|Fm|Md|No|Lr|Rf|Db|Sg|Bh|Hs|Mt|Ds|Rg|Cn|Nh|Fl|Mc|Lv|Ts|Og)(\\s+)(\\d+\\.?\\d*)(\\s+)((?=.*\\w).+)(\\s*$)",
+				"whileCaptures": {
+					"2": { "name": "entity.other.attribute.atom-symbol.card-atomic_species.pwx.espresso-in" },
+					"4": { "name": "constant.numeric.atom-mass.card-atomic_species.pwx.espresso-in" },
+					"6": { "name": "string.pseudopot.card-atomic_species.pwx.espresso-in" }
+				}
+			}]
+		},
+		"card-atomic_positions": {
+			"patterns": [{
+				"begin": "(^\\s*)((?i)atomic_positions)(\\s(\\{(?=\\w*\\})|\\((?=\\w*\\)))(alat|bohr|angstrom|crystal|crystal_sg)(\\}|\\)))?\\s*$",
+				"beginCaptures": {
+					"0": { "name": "entity.name.tag.header.card-atomic_positions.pwx.espresso-in" },
+					"5": { "name": "entity.other.attribute.unit.card-atomic_positions.pwx.espresso-in" }
+				},
+				"while": "(^\\s*)(H|He|Li|Be|B|C|N|O|F|Ne|Na|Mg|Al|Si|P|S|Cl|Ar|K|Ca|Sc|Ti|V|Cr|Mn|Fe|Co|Ni|Cu|Zn|Ga|Ge|As|Se|Br|Kr|Rb|Sr|Y|Zr|Nb|Mo|Tc|Ru|Rh|Pd|Ag|Cd|In|Sn|Sb|Te|I|Xe|Cs|Ba|La|Ce|Pr|Nd|Pm|Sm|Eu|Gd|Tb|Dy|Ho|Er|Tm|Yb|Lu|Hf|Ta|W|Re|Os|Ir|Pt|Au|Hg|Tl|Pb|Bi|Po|At|Rn|Fr|Ra|Ac|Th|Pa|U|Np|Pu|Am|Cm|Bk|Cf|Es|Fm|Md|No|Lr|Rf|Db|Sg|Bh|Hs|Mt|Ds|Rg|Cn|Nh|Fl|Mc|Lv|Ts|Og)(\\s+)(\\-?\\d+\\.?\\d*)(\\s+)(\\-?\\d+\\.?\\d*)(\\s+)(\\-?\\d+\\.?\\d*)(\\s*$|\\s+[01]\\s+[01]\\s+[01]\\s*$)",
+				"whileCaptures": {
+					"2": { "name": "entity.other.attribute.atom-symbol.card-atomic_positions.pwx.espresso-in" },
+					"4": { "name": "constant.numeric.atom-position.x-component.card-atomic_positions.pwx.espresso-in" },
+					"6": { "name": "constant.numeric.atom-position.y-component.card-atomic_positions.pwx.espresso-in" },
+					"8": { "name": "constant.numeric.atom-position.z-component.card-atomic_positions.pwx.espresso-in" },
+					"9": { "name": "entity.other.attribute.freeze-position.card-atomic_positions.pwx.espresso-in" }
+				}
+			}]
+		},
+		"card-k_points": {
 			"patterns": [
 				{
-				"name": "entity.name.tag.espresso-in",
-				"match": "\\b(calculation|title|verbosity|restart_mode|wf_collect|nstep|iprint|tstress|tprnfor|dt|outdir|wfcdir|prefix|lkpoint_dir|max_seconds|etot_conv_thr|forc_conv_thr|disk_io|pseudo_dir|tefield|dipfield|lelfield|nberrycyc|lorbm|lberry|gdir|nppstr|lfcpopt|monopole|ibrav|A|B|C|cosAB|cosAC|cosBC|nat|ntyp|nbnd|tot_charge|tot_magnetization|ecutwfc|ecutrho|ecutfock|nr1|nr2|nr3|nr1s|nr2s|nr3s|nosym|nosym_evc|noinv|no_t_rev|force_symmorphic|use_all_frac|occupations|one_atom_occupations|starting_spin_angle|degauss|smearing|nspin|noncolin|ecfixed|qcutz|q2sigma|input_dft|exx_fraction|screening_parameter|exxdiv_treatment|x_gamma_extrapolation|ecutvcut|nqx1|nqx2|nqx3|lda_plus_u|lda_plus_u_kind|U_projection_type|edir|emaxpos|eopreg|eamp|constrained_magnetization|lambda|report|lspinorb|assume_isolated|esm_bc|esm_w|esm_efield|esm_nfit|fcp_mu|vdw_corr|london|london_s6|london_rcut|ts_vdw_econv_thr|ts_vdw_isolated|xdm|xdm_a1|xdm_a2|space_group|uniqueb|origin_choice|rhombohedral|zmon|realxz|block|block_1|block_2|block_height|electron_maxstep|scf_must_converge|conv_thr|adaptive_thr|conv_thr_init|conv_thr_multi|mixing_mode|mixing_beta|mixing_ndim|mixing_fixed_ns|diagonalization|ortho_para|diago_thr_init|diago_cg_maxiter|diago_david_ndim|diago_full_acc|efield|efield_phase|startingpot|startingwfc|tqr|ion_dynamics|ion_positions|pot_extrapolation|wfc_extrapolation|remove_rigid_rot|ion_temperature|tempw|tolp|delta_t|nraise|refold_pos|upscale|bfgs_ndim|trust_radius_max|trust_radius_min|trust_radius_ini|w_1|w_2|cell_dynamics|press|wmass|cell_factor|press_conv_thr|cell_dofree)(\\b|\\=)"
+					"begin": "(^\\s*)((?i)k_points)(\\s(\\{(?=\\w*\\})|\\((?=\\w*\\))|(?![\\{\\(]))(tpiba|crystal|tpiba_b|crystal_b|tpiba_c|crystal_c)(\\}|\\)|))\\s*$",
+					"beginCaptures": {
+						"0": { "name": "entity.name.tag.header.card-k_points.pwx.espresso-in" },
+						"5": { "name": "entity.other.attribute.type.card-k_points.pwx.espresso-in" }
+					},
+					"while": "(^\\s*)((\\d+)(\\s*$)|(\\-?\\d+\\.?\\d*)(\\s+)(\\-?\\d+\\.?\\d*)(\\s+)(\\-?\\d+\\.?\\d*)(\\s+)(\\d+\\.?\\d*)(\\s*$))",
+					"whileCaptures": {
+						"3": { "name": "constant.numeric.number-of-k_points.card-k_points.pwx.espresso-in" },
+						"5": { "name": "constant.numeric.k_points-x.card-k_points.pwx.espresso-in" },
+						"7": { "name": "constant.numeric.k_points-y.card-k_points.pwx.espresso-in" },
+						"9": { "name": "constant.numeric.k_points-z.card-k_points.pwx.espresso-in" },
+						"11": { "name": "constant.numeric.k_points-weight.card-k_points.pwx.espresso-in" }
+					}
 				},
 				{
-					"name": "entity.name.tag.tag-with-1-param.espresso-in",
-					"match": "\\b(celldm|starting_magnetization|Hubbard_U|Hubbard_J0|Hubbard_alpha|Hubbard_beta|angle1|angle2|fixed_magnetization|london_c6|london_rvdw|efield_cart)\\(\\d*\\)"
+					"begin": "(^\\s*)((?i)k_points)(\\s(\\{(?=\\w*\\})|\\((?=\\w*\\))|(?![\\{\\(]))(automatic)(\\}|\\)|))\\s*$",
+					"beginCaptures": {
+						"0": { "name": "entity.name.tag.header.card-k_points.pwx.espresso-in" },
+						"5": { "name": "entity.other.attribute.type.card-k_points.pwx.espresso-in" }
+					},
+					"end": "(^\\s*)(\\d+)(\\s+)(\\d+)(\\s+)(\\d+)(\\s+)([01])(\\s+)([01])(\\s+)([01])(\\s*$)",
+					"endCaptures": {
+						"2": { "name": "constant.numeric.nk1.monkhorst-pack-grid.card-k_points.pwx.espresso-in" },
+						"4": { "name": "constant.numeric.nk2.monkhorst-pack-grid.card-k_points.pwx.espresso-in" },
+						"6": { "name": "constant.numeric.nk3.monkhorst-pack-grid.card-k_points.pwx.espresso-in" },
+						"8": { "name": "entity.other.attribute.shiftk1.monkhorst-pack-grid.card-k_points.pwx.espresso-in" },
+						"10": { "name": "entity.other.attribute.shiftk2.monkhorst-pack-grid.card-k_points.pwx.espresso-in" },
+						"12": { "name": "entity.other.attribute.shiftk3.monkhorst-pack-grid.card-k_points.pwx.espresso-in" }
+					}
 				},
 				{
-					"name": "entity.name.tag.tag-with-2-params.espresso-in",
-					"match": "\\b(Hubbard_J)\\(\\d*,\\d*\\)"
-				},
-				{
-					"name": "entity.name.tag.tag-with-3-params.espresso-in",
-					"match": "\\b(starting_ns_eigenvalue)\\(\\d*,\\d*,\\d*\\)"
+					"begin": "(^\\s*)((?i)k_points)(\\s(\\{(?=\\w*\\})|\\((?=\\w*\\))|(?![\\{\\(]))(gamma)(\\}|\\)|))\\s*$",
+					"beginCaptures": {
+						"0": { "name": "entity.name.tag.header.card-k_points.pwx.espresso-in" },
+						"5": { "name": "entity.other.attribute.type.card-k_points.pwx.espresso-in" }
+					}
 				}
 			]
 		},
-		"constants": {
-			"patterns": [
-				{
-					"name": "constant.numeric.espresso-in",
-					"match": "\\b\\d+\\.?(?i)(d-?|d?)\\d*,?\\b"
+		"card-additional_k_points": {
+			"patterns": [{
+				"begin": "(^\\s*)((?i)additional_k_points)(\\s(\\{(?=\\w*\\})|\\((?=\\w*\\))|(?![\\{\\(]))(tpiba|crystal|tpiba_b|crystal_b|tpiba_c|crystal_c)(\\}|\\)|))\\s*$",
+				"beginCaptures": {
+					"0": { "name": "entity.name.tag.header.card-additional_k_points.pwx.espresso-in" },
+					"5": { "name": "entity.other.attribute.type.card-additional_k_points.pwx.espresso-in" }
 				},
-				{
-					"name": "constant.language.bool.espresso-in",
-					"match": "(?i)(\\.true\\.|\\.false\\.)"
-				},
-				{
-					"name": "variable.parameter.atom-type.espresso-in",
-					"match": "\\b(?i)(H|He|Li|Be|B|C|N|O|F|Ne|Na|Mg|Al|Si|P|S|Cl|Ar|K|Ca|Sc|Ti|V|Cr|Mn|Fe|Co|Ni|Cu|Zn|Ga|Ge|As|Se|Br|Kr|Rb|Sr|Y|Zr|Nb|Mo|Tc|Ru|Rh|Pd|Ag|Cd|In|Sn|Sb|Te|I|Xe|Cs|Ba|La|Ce|Pr|Nd|Pm|Sm|Eu|Gd|Tb|Dy|Ho|Er|Tm|Yb|Lu|Hf|Ta|W|Re|Os|Ir|Pt|Au|Hg|Tl|Pb|Bi|Po|At|Rn|Fr|Ra|Ac|Th|Pa|U|Np|Pu|Am|Cm|Bk|Cf|Es|Fm|Md|No|Lr|Rf|Db|Sg|Bh|Hs|Mt|Ds|Rg|Cn|Nh|Fl|Mc|Lv|Ts|Og)\\b"
-				},
-				{
-					"name": "variable.parameter.unit.espresso-in",
-					"match": "\\((?i)(alat|bohr|angstrom|crystal|crystal_sg)\\)"
-				},
-				{
-					"name": "variable.parameter.kpoints.espresso-in",
-					"match": "\\b(?i)(tpiba|automatic|crystal|gamma|tpiba_b|crystal_b|tpiba_c|crystal_c)\\b"
+				"while": "(^\\s*)((\\d+)(\\s*$)|(\\-?\\d+\\.?\\d*)(\\s+)(\\-?\\d+\\.?\\d*)(\\s+)(\\-?\\d+\\.?\\d*)(\\s+)(\\d+\\.?\\d*)(\\s*$))",
+				"whileCaptures": {
+					"3": { "name": "constant.numeric.number-of-k_points.card-additional_k_points.pwx.espresso-in" },
+					"5": { "name": "constant.numeric.k_points-x.card-additional_k_points.pwx.espresso-in" },
+					"7": { "name": "constant.numeric.k_points-y.card-additional_k_points.pwx.espresso-in" },
+					"9": { "name": "constant.numeric.k_points-z.card-additional_k_points.pwx.espresso-in" },
+					"11": { "name": "constant.numeric.k_points-weight.card-additional_k_points.pwx.espresso-in" }
 				}
-			]
+			}]
 		},
-		"strings": {
-			"patterns": [
-				{
-					"name": "string.quoted.single.espresso-in",
-					"begin": "'",
-					"end": "'"
+		"card-cell_parameters": {
+			"patterns": [{
+				"begin": "(^\\s*)((?i)cell_parameters)(\\s(\\{(?=\\w*\\})|\\((?=\\w*\\)))(alat|bohr|angstrom)(\\}|\\)))?\\s*$",
+				"beginCaptures": {
+					"0": { "name": "entity.name.tag.header.card-cell_parameters.pwx.espresso-in" },
+					"5": { "name": "entity.other.attribute.unit.card-cell_parameters.pwx.espresso-in" }
 				},
-				{
-					"name": "string.quoted.double.espresso-in",
-					"begin": "\"",
-					"end": "\""
-				},
-				{
-					"name": "constant.character.escape.espresso-in",
-					"match": "\\\\."
+				"while": "(^\\s*)(\\-?\\d+\\.?\\d*)(\\s+)(\\-?\\d+\\.?\\d*)(\\s+)(\\-?\\d+\\.?\\d*)(\\s*$)",
+				"whileCaptures": {
+					"2": { "name": "constant.numeric.lattice-vector.x-component.card-cell_parameters.pwx.espresso-in" },
+					"4": { "name": "constant.numeric.lattice-vector.y-component-mass.card-cell_parameters.pwx.espresso-in" },
+					"6": { "name": "constant.numeric.lattice-vector.z-component-mass.card-cell_parameters.pwx.espresso-in" }
 				}
-			]
+			}]
+		},
+		"card-constraints": {
+			"patterns": [{
+				"begin": "(^\\s*)((?i)constraints)\\s*$",
+				"beginCaptures": {
+					"0": { "name": "entity.name.tag.header.card-constraints.pwx.espresso-in" }
+				},
+				"while": "(^\\s*)((\\d+)(\\s+\\{\\s*)(\\d+\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*\\}\\s*$)|(?i)(type_coord|atom_coord|distance|planar_angle|torsional_angle|bennet_proj)(\\s+)(\\-?\\d+\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s+)(\\-?\\d+\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s+\\[\\s*)(\\-?\\d+\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s+)(\\-?\\d+\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*\\]\\s+\\{\\s*)(\\-?\\d+\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*\\}\\s*$))",
+				"whileCaptures": {
+					"3": { "name": "constant.numeric.nconstr.card-constraints.pwx.espresso-in" },
+					"5": { "name": "constant.numeric.constr_tol.card-constraints.pwx.espresso-in" },
+					"7": { "name": "entity.other.attribute.constr_type.card-constraints.pwx.espresso-in" },
+					"9": { "name": "constant.numeric.constr_1.card-constraints.pwx.espresso-in" },
+					"11": { "name": "constant.numeric.constr_2.card-constraints.pwx.espresso-in" },
+					"13": { "name": "constant.numeric.constr_3.card-constraints.pwx.espresso-in" },
+					"15": { "name": "constant.numeric.constr_4.card-constraints.pwx.espresso-in" },
+					"17": { "name": "constant.numeric.constr_target.card-constraints.pwx.espresso-in" }
+				}
+			}]
+		},
+		"card-occupations": {
+			"patterns": [{
+				"begin": "(^\\s*)((?i)occupations)\\s*$",
+				"beginCaptures": {
+					"0": { "name": "entity.name.tag.header.card-occupations.pwx.espresso-in" }
+				},
+				"while": "((^\\s*)(\\d+\\.?\\d*(\\s+\\d+\\.?\\d*){0,9})(\\s*$)|(^\\s*\\[\\s*)(\\d+\\.?\\d*(\\s+\\d+\\.?\\d*){0,9})(\\s*\\]\\s*$))",
+				"whileCaptures": {
+					"3": { "name": "constant.numeric.individual-state.card-occupations.pwx.espresso-in" },
+					"7": { "name": "constant.numeric.minority-spin-state.card-occupations.pwx.espresso-in" }
+				}
+			}]
+		},
+		"card-atomic_velocities": {
+			"patterns": [{
+				"begin": "(^\\s*)((?i)atomic_velocities)(\\s(\\{(?=\\w*\\})|\\((?=\\w*\\))|(?![\\{\\(]))(a\\.u\\.)(\\}|\\)|))\\s*$",
+				"beginCaptures": {
+					"0": { "name": "entity.name.tag.header.card-atomic_velocities.pwx.espresso-in" },
+					"5": { "name": "entity.other.attribute.unit.card-atomic_velocities.pwx.espresso-in" }
+				},
+				"while": "(^\\s*)(H|He|Li|Be|B|C|N|O|F|Ne|Na|Mg|Al|Si|P|S|Cl|Ar|K|Ca|Sc|Ti|V|Cr|Mn|Fe|Co|Ni|Cu|Zn|Ga|Ge|As|Se|Br|Kr|Rb|Sr|Y|Zr|Nb|Mo|Tc|Ru|Rh|Pd|Ag|Cd|In|Sn|Sb|Te|I|Xe|Cs|Ba|La|Ce|Pr|Nd|Pm|Sm|Eu|Gd|Tb|Dy|Ho|Er|Tm|Yb|Lu|Hf|Ta|W|Re|Os|Ir|Pt|Au|Hg|Tl|Pb|Bi|Po|At|Rn|Fr|Ra|Ac|Th|Pa|U|Np|Pu|Am|Cm|Bk|Cf|Es|Fm|Md|No|Lr|Rf|Db|Sg|Bh|Hs|Mt|Ds|Rg|Cn|Nh|Fl|Mc|Lv|Ts|Og)(\\s+)(\\-?\\d+\\.?\\d*)(\\s+)(\\-?\\d+\\.?\\d*)(\\s+)(\\-?\\d+\\.?\\d*)(\\s*$|\\s+[01]\\s+[01]\\s+[01]\\s*$)",
+				"whileCaptures": {
+					"2": { "name": "entity.other.attribute.atom-symbol.card-atomic_velocities.pwx.espresso-in" },
+					"4": { "name": "constant.numeric.atom-velocity.x-component.card-atomic_velocities.pwx.espresso-in" },
+					"6": { "name": "constant.numeric.atom-velocity.y-component.card-atomic_velocities.pwx.espresso-in" },
+					"8": { "name": "constant.numeric.atom-velocity.z-component.card-atomic_velocities.pwx.espresso-in" }
+				}
+			}]
+		},
+		"card-atomic_forces": {
+			"patterns": [{
+				"begin": "(^\\s*)((?i)atomic_forces)\\s*$",
+				"beginCaptures": {
+					"0": { "name": "entity.name.tag.header.card-atomic_forces.pwx.espresso-in" }
+				},
+				"while": "(^\\s*)(H|He|Li|Be|B|C|N|O|F|Ne|Na|Mg|Al|Si|P|S|Cl|Ar|K|Ca|Sc|Ti|V|Cr|Mn|Fe|Co|Ni|Cu|Zn|Ga|Ge|As|Se|Br|Kr|Rb|Sr|Y|Zr|Nb|Mo|Tc|Ru|Rh|Pd|Ag|Cd|In|Sn|Sb|Te|I|Xe|Cs|Ba|La|Ce|Pr|Nd|Pm|Sm|Eu|Gd|Tb|Dy|Ho|Er|Tm|Yb|Lu|Hf|Ta|W|Re|Os|Ir|Pt|Au|Hg|Tl|Pb|Bi|Po|At|Rn|Fr|Ra|Ac|Th|Pa|U|Np|Pu|Am|Cm|Bk|Cf|Es|Fm|Md|No|Lr|Rf|Db|Sg|Bh|Hs|Mt|Ds|Rg|Cn|Nh|Fl|Mc|Lv|Ts|Og)(\\s+)(\\-?\\d+\\.?\\d*)(\\s+)(\\-?\\d+\\.?\\d*)(\\s+)(\\-?\\d+\\.?\\d*)(\\s*$|\\s+[01]\\s+[01]\\s+[01]\\s*$)",
+				"whileCaptures": {
+					"2": { "name": "entity.other.attribute.atom-symbol.card-atomic_forces.pwx.espresso-in" },
+					"4": { "name": "constant.numeric.force.x-component.card-atomic_forces.pwx.espresso-in" },
+					"6": { "name": "constant.numeric.force.y-component.card-atomic_forces.pwx.espresso-in" },
+					"8": { "name": "constant.numeric.force.z-component.card-atomic_forces.pwx.espresso-in" }
+				}
+			}]
 		}
 	},
 	"scopeName": "source.espresso-in"

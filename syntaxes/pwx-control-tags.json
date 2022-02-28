@@ -1,0 +1,413 @@
+{
+    "scopeName": "pwx-control-tags.injection",
+    "injectionSelector": "L:entity.name.tag.content.namelist-control.pwx.espresso-in",
+    "patterns": [
+        {
+            "include": "#tag-calculation.namelist-control.pwx"
+        },
+        {
+            "include": "#tag-title.namelist-control.pwx"
+        },
+        {
+            "include": "#tag-verbosity.namelist-control.pwx"
+        },
+        {
+            "include": "#tag-restart_mode.namelist-control.pwx"
+        },
+        {
+            "include": "#tag-nstep.namelist-control.pwx"
+        },
+        {
+            "include": "#tag-iprint.namelist-control.pwx"
+        },
+        {
+            "include": "#tag-tstress.namelist-control.pwx"
+        },
+        {
+            "include": "#tag-tprnfor.namelist-control.pwx"
+        },
+        {
+            "include": "#tag-dt.namelist-control.pwx"
+        },
+        {
+            "include": "#tag-outdir.namelist-control.pwx"
+        },
+        {
+            "include": "#tag-wfcdir.namelist-control.pwx"
+        },
+        {
+            "include": "#tag-prefix.namelist-control.pwx"
+        },
+        {
+            "include": "#tag-max_seconds.namelist-control.pwx"
+        },
+        {
+            "include": "#tag-etot_conv_thr.namelist-control.pwx"
+        },
+        {
+            "include": "#tag-forc_conv_thr.namelist-control.pwx"
+        },
+        {
+            "include": "#tag-disk_io.namelist-control.pwx"
+        },
+        {
+            "include": "#tag-pseudo_dir.namelist-control.pwx"
+        },
+        {
+            "include": "#tag-tefield.namelist-control.pwx"
+        },
+        {
+            "include": "#tag-dipfield.namelist-control.pwx"
+        },
+        {
+            "include": "#tag-lelfield.namelist-control.pwx"
+        },
+        {
+            "include": "#tag-nberrycyc.namelist-control.pwx"
+        },
+        {
+            "include": "#tag-lorbm.namelist-control.pwx"
+        },
+        {
+            "include": "#tag-lberry.namelist-control.pwx"
+        },
+        {
+            "include": "#tag-gdir.namelist-control.pwx"
+        },
+        {
+            "include": "#tag-nppstr.namelist-control.pwx"
+        },
+        {
+            "include": "#tag-lfcp.namelist-control.pwx"
+        },
+        {
+            "include": "#tag-gate.namelist-control.pwx"
+        }
+    ],
+    "repository": {
+        "tag-calculation.namelist-control.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(calculation)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-calculation.namelist-control.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\'(?i)(scf|nscf|bands|relax|md|vc-relax|vc-md)\\')(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "entity.other.attribute.tag-calculation.namelist-control.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-title.namelist-control.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(title)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-title.namelist-control.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\'(.*)\\')(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "string.quoted.tag-title.namelist-control.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-verbosity.namelist-control.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(verbosity)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-verbosity.namelist-control.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\'(?i)(high|low)\\')(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "entity.other.attribute.tag-verbosity.namelist-control.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-restart_mode.namelist-control.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(restart_mode)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-restart_mode.namelist-control.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\'(?i)(from_scratch|restart)\\')(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "entity.other.attribute.tag-restart_mode.namelist-control.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-nstep.namelist-control.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(nstep)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-nstep.namelist-control.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-nstep.namelist-control.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-iprint.namelist-control.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(iprint)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-iprint.namelist-control.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-iprint.namelist-control.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-tstress.namelist-control.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(tstress)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-tstress.namelist-control.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\.(?i)(true|false)\\.)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "entity.other.attribute.tag-tstress.namelist-control.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-tprnfor.namelist-control.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(tprnfor)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-tprnfor.namelist-control.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\.(?i)(true|false)\\.)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "entity.other.attribute.tag-tprnfor.namelist-control.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-dt.namelist-control.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(dt)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-dt.namelist-control.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-dt.namelist-control.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-outdir.namelist-control.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(outdir)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-outdir.namelist-control.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\'(?i)(.*)\\')(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "string.quoted.tag-outdir.namelist-control.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-wfcdir.namelist-control.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(wfcdir)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-wfcdir.namelist-control.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\'(?i)(.*)\\')(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "string.quoted.tag-wfcdir.namelist-control.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-prefix.namelist-control.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(prefix)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-prefix.namelist-control.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\'(?i)(.*)\\')(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "string.quoted.tag-prefix.namelist-control.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-max_seconds.namelist-control.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(max_seconds)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-max_seconds.namelist-control.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-max_seconds.namelist-control.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-etot_conv_thr.namelist-control.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(etot_conv_thr)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-etot_conv_thr.namelist-control.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-etot_conv_thr.namelist-control.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-forc_conv_thr.namelist-control.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(forc_conv_thr)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-forc_conv_thr.namelist-control.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-forc_conv_thr.namelist-control.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-disk_io.namelist-control.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(disk_io)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-disk_io.namelist-control.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\'(?i)(high|medium|low|nowf|none)\\')(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "entity.other.attribute.tag-disk_io.namelist-control.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-pseudo_dir.namelist-control.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(pseudo_dir)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-pseudo_dir.namelist-control.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\'(?i)(.*)\\')(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "string.quoted.tag-pseudo_dir.namelist-control.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-tefield.namelist-control.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(tefield)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-tefield.namelist-control.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\.(?i)(true|false)\\.)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "entity.other.attribute.tag-tefield.namelist-control.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-dipfield.namelist-control.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(dipfield)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-dipfield.namelist-control.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\.(?i)(true|false)\\.)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "entity.other.attribute.tag-dipfield.namelist-control.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-lelfield.namelist-control.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(lelfield)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-lelfield.namelist-control.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\.(?i)(true|false)\\.)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "entity.other.attribute.tag-lelfield.namelist-control.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-nberrycyc.namelist-control.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(nberrycyc)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-nberrycyc.namelist-control.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-nberrycyc.namelist-control.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-lorbm.namelist-control.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(lorbm)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-lorbm.namelist-control.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\.(?i)(true|false)\\.)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "entity.other.attribute.tag-lorbm.namelist-control.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-lberry.namelist-control.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(lberry)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-lberry.namelist-control.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\.(?i)(true|false)\\.)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "entity.other.attribute.tag-lberry.namelist-control.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-gdir.namelist-control.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(gdir)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-gdir.namelist-control.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)([1-3])(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "entity.other.attribute.tag-gdir.namelist-control.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-nppstr.namelist-control.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(nppstr)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-nppstr.namelist-control.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-nppstr.namelist-control.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-lfcp.namelist-control.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(lfcp)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-lfcp.namelist-control.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\.(?i)(true|false)\\.)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "entity.other.attribute.tag-lfcp.namelist-control.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-gate.namelist-control.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(gate)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-gate.namelist-control.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\.(?i)(true|false)\\.)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "entity.other.attribute.tag-gate.namelist-control.pwx.espresso-in" }
+                }
+            }]
+        }
+    }
+}

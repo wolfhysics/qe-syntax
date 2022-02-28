@@ -1,0 +1,98 @@
+{
+    "scopeName": "pwx-cell-tags.injection",
+    "injectionSelector": "L:entity.name.tag.content.namelist-cell.pwx.espresso-in",
+    "patterns": [
+        {
+            "include": "#tag-cell_dynamics.namelist-cell.pwx"
+        },
+        {
+            "include": "#tag-press.namelist-cell.pwx"
+        },
+        {
+            "include": "#tag-wmass.namelist-cell.pwx"
+        },
+        {
+            "include": "#tag-cell_factor.namelist-cell.pwx"
+        },
+        {
+            "include": "#tag-press_conv_thr.namelist-cell.pwx"
+        },
+        {
+            "include": "#tag-cell_dofree.namelist-cell.pwx"
+        }
+    ],
+    "repository": {
+        "tag-cell_dynamics.namelist-cell.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(cell_dynamics)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-cell_dynamics.namelist-cell.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\'(?i)(none|sd|damp\\-pr|damp\\-w|bfgs|pr|w)\\')(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "entity.other.attribute.tag-cell_dynamics.namelist-cell.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-press.namelist-cell.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(press)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-press.namelist-cell.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\-?\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-press.namelist-cell.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-wmass.namelist-cell.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(wmass)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-wmass.namelist-cell.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\-?\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-wmass.namelist-cell.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-cell_factor.namelist-cell.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(cell_factor)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-cell_factor.namelist-cell.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\-?\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-cell_factor.namelist-cell.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-press_conv_thr.namelist-cell.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(press_conv_thr)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-press_conv_thr.namelist-cell.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\-?\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-press_conv_thr.namelist-cell.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-cell_dofree.namelist-cell.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(cell_dofree)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-cell_dofree.namelist-cell.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\'(?i)(all|ibrav|x|y|z|xy|xz|yz|xyz|shape|volume|2Dxy|2Dshape|epitaxial_ab|epitaxial_ac|epitaxial_bc)\\')(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "entity.other.attribute.tag-cell_dofree.namelist-cell.pwx.espresso-in" }
+                }
+            }]
+        }
+    }
+}
