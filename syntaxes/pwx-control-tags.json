@@ -87,7 +87,7 @@
     "repository": {
         "tag-calculation.namelist-control.pwx": {
             "patterns": [{
-                "begin": "(^\\s*)(calculation)",
+                "begin": "(^\\s*)(calculation)(?=[\\s\\=])",
                 "beginCaptures": {
                     "2": { "name": "variable.parameter.declaration.tag-calculation.namelist-control.pwx.espresso-in" }
                 },
@@ -99,11 +99,11 @@
         },
         "tag-title.namelist-control.pwx": {
             "patterns": [{
-                "begin": "(^\\s*)(title)",
+                "begin": "(^\\s*)(title)(?=[\\s\\=])",
                 "beginCaptures": {
                     "2": { "name": "variable.parameter.declaration.tag-title.namelist-control.pwx.espresso-in" }
                 },
-                "end": "(\\s*\\=\\s*)(\\'(?i)(.*)\\')(\\s*,?\\s*)$",
+                "end": "(\\s*\\=\\s*)(\\'(.*)\\')(\\s*,?\\s*)$",
                 "endCaptures": {
                     "2": { "name": "string.quoted.tag-title.namelist-control.pwx.espresso-in" }
                 }
@@ -111,7 +111,7 @@
         },
         "tag-verbosity.namelist-control.pwx": {
             "patterns": [{
-                "begin": "(^\\s*)(verbosity)",
+                "begin": "(^\\s*)(verbosity)(?=[\\s\\=])",
                 "beginCaptures": {
                     "2": { "name": "variable.parameter.declaration.tag-verbosity.namelist-control.pwx.espresso-in" }
                 },
@@ -123,7 +123,7 @@
         },
         "tag-restart_mode.namelist-control.pwx": {
             "patterns": [{
-                "begin": "(^\\s*)(restart_mode)",
+                "begin": "(^\\s*)(restart_mode)(?=[\\s\\=])",
                 "beginCaptures": {
                     "2": { "name": "variable.parameter.declaration.tag-restart_mode.namelist-control.pwx.espresso-in" }
                 },
@@ -135,7 +135,7 @@
         },
         "tag-nstep.namelist-control.pwx": {
             "patterns": [{
-                "begin": "(^\\s*)(nstep)",
+                "begin": "(^\\s*)(nstep)(?=[\\s\\=])",
                 "beginCaptures": {
                     "2": { "name": "variable.parameter.declaration.tag-nstep.namelist-control.pwx.espresso-in" }
                 },
@@ -147,7 +147,7 @@
         },
         "tag-iprint.namelist-control.pwx": {
             "patterns": [{
-                "begin": "(^\\s*)(iprint)",
+                "begin": "(^\\s*)(iprint)(?=[\\s\\=])",
                 "beginCaptures": {
                     "2": { "name": "variable.parameter.declaration.tag-iprint.namelist-control.pwx.espresso-in" }
                 },
@@ -159,7 +159,7 @@
         },
         "tag-tstress.namelist-control.pwx": {
             "patterns": [{
-                "begin": "(^\\s*)(tstress)",
+                "begin": "(^\\s*)(tstress)(?=[\\s\\=])",
                 "beginCaptures": {
                     "2": { "name": "variable.parameter.declaration.tag-tstress.namelist-control.pwx.espresso-in" }
                 },
@@ -171,7 +171,7 @@
         },
         "tag-tprnfor.namelist-control.pwx": {
             "patterns": [{
-                "begin": "(^\\s*)(tprnfor)",
+                "begin": "(^\\s*)(tprnfor)(?=[\\s\\=])",
                 "beginCaptures": {
                     "2": { "name": "variable.parameter.declaration.tag-tprnfor.namelist-control.pwx.espresso-in" }
                 },
@@ -183,11 +183,11 @@
         },
         "tag-dt.namelist-control.pwx": {
             "patterns": [{
-                "begin": "(^\\s*)(dt)",
+                "begin": "(^\\s*)(dt)(?=[\\s\\=])",
                 "beginCaptures": {
                     "2": { "name": "variable.parameter.declaration.tag-dt.namelist-control.pwx.espresso-in" }
                 },
-                "end": "(\\s*\\=\\s*)(\\d*\\.?\\d*(?i)d?\\-?\\d*)(\\s*,?\\s*)$",
+                "end": "(\\s*\\=\\s*)(\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
                 "endCaptures": {
                     "2": { "name": "constant.numeric.tag-dt.namelist-control.pwx.espresso-in" }
                 }
@@ -195,7 +195,7 @@
         },
         "tag-outdir.namelist-control.pwx": {
             "patterns": [{
-                "begin": "(^\\s*)(outdir)",
+                "begin": "(^\\s*)(outdir)(?=[\\s\\=])",
                 "beginCaptures": {
                     "2": { "name": "variable.parameter.declaration.tag-outdir.namelist-control.pwx.espresso-in" }
                 },
@@ -207,7 +207,7 @@
         },
         "tag-wfcdir.namelist-control.pwx": {
             "patterns": [{
-                "begin": "(^\\s*)(wfcdir)",
+                "begin": "(^\\s*)(wfcdir)(?=[\\s\\=])",
                 "beginCaptures": {
                     "2": { "name": "variable.parameter.declaration.tag-wfcdir.namelist-control.pwx.espresso-in" }
                 },
@@ -219,7 +219,7 @@
         },
         "tag-prefix.namelist-control.pwx": {
             "patterns": [{
-                "begin": "(^\\s*)(prefix)",
+                "begin": "(^\\s*)(prefix)(?=[\\s\\=])",
                 "beginCaptures": {
                     "2": { "name": "variable.parameter.declaration.tag-prefix.namelist-control.pwx.espresso-in" }
                 },
@@ -231,11 +231,11 @@
         },
         "tag-max_seconds.namelist-control.pwx": {
             "patterns": [{
-                "begin": "(^\\s*)(max_seconds)",
+                "begin": "(^\\s*)(max_seconds)(?=[\\s\\=])",
                 "beginCaptures": {
                     "2": { "name": "variable.parameter.declaration.tag-max_seconds.namelist-control.pwx.espresso-in" }
                 },
-                "end": "(\\s*\\=\\s*)(\\d*\\.?\\d*(?i)d?\\-?\\d*)(\\s*,?\\s*)$",
+                "end": "(\\s*\\=\\s*)(\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
                 "endCaptures": {
                     "2": { "name": "constant.numeric.tag-max_seconds.namelist-control.pwx.espresso-in" }
                 }
@@ -243,11 +243,11 @@
         },
         "tag-etot_conv_thr.namelist-control.pwx": {
             "patterns": [{
-                "begin": "(^\\s*)(etot_conv_thr)",
+                "begin": "(^\\s*)(etot_conv_thr)(?=[\\s\\=])",
                 "beginCaptures": {
                     "2": { "name": "variable.parameter.declaration.tag-etot_conv_thr.namelist-control.pwx.espresso-in" }
                 },
-                "end": "(\\s*\\=\\s*)(\\d*\\.?\\d*(?i)d?\\-?\\d*)(\\s*,?\\s*)$",
+                "end": "(\\s*\\=\\s*)(\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
                 "endCaptures": {
                     "2": { "name": "constant.numeric.tag-etot_conv_thr.namelist-control.pwx.espresso-in" }
                 }
@@ -255,11 +255,11 @@
         },
         "tag-forc_conv_thr.namelist-control.pwx": {
             "patterns": [{
-                "begin": "(^\\s*)(forc_conv_thr)",
+                "begin": "(^\\s*)(forc_conv_thr)(?=[\\s\\=])",
                 "beginCaptures": {
                     "2": { "name": "variable.parameter.declaration.tag-forc_conv_thr.namelist-control.pwx.espresso-in" }
                 },
-                "end": "(\\s*\\=\\s*)(\\d*\\.?\\d*(?i)d?\\-?\\d*)(\\s*,?\\s*)$",
+                "end": "(\\s*\\=\\s*)(\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
                 "endCaptures": {
                     "2": { "name": "constant.numeric.tag-forc_conv_thr.namelist-control.pwx.espresso-in" }
                 }
@@ -267,7 +267,7 @@
         },
         "tag-disk_io.namelist-control.pwx": {
             "patterns": [{
-                "begin": "(^\\s*)(disk_io)",
+                "begin": "(^\\s*)(disk_io)(?=[\\s\\=])",
                 "beginCaptures": {
                     "2": { "name": "variable.parameter.declaration.tag-disk_io.namelist-control.pwx.espresso-in" }
                 },
@@ -279,7 +279,7 @@
         },
         "tag-pseudo_dir.namelist-control.pwx": {
             "patterns": [{
-                "begin": "(^\\s*)(pseudo_dir)",
+                "begin": "(^\\s*)(pseudo_dir)(?=[\\s\\=])",
                 "beginCaptures": {
                     "2": { "name": "variable.parameter.declaration.tag-pseudo_dir.namelist-control.pwx.espresso-in" }
                 },
@@ -291,7 +291,7 @@
         },
         "tag-tefield.namelist-control.pwx": {
             "patterns": [{
-                "begin": "(^\\s*)(tefield)",
+                "begin": "(^\\s*)(tefield)(?=[\\s\\=])",
                 "beginCaptures": {
                     "2": { "name": "variable.parameter.declaration.tag-tefield.namelist-control.pwx.espresso-in" }
                 },
@@ -303,7 +303,7 @@
         },
         "tag-dipfield.namelist-control.pwx": {
             "patterns": [{
-                "begin": "(^\\s*)(dipfield)",
+                "begin": "(^\\s*)(dipfield)(?=[\\s\\=])",
                 "beginCaptures": {
                     "2": { "name": "variable.parameter.declaration.tag-dipfield.namelist-control.pwx.espresso-in" }
                 },
@@ -315,7 +315,7 @@
         },
         "tag-lelfield.namelist-control.pwx": {
             "patterns": [{
-                "begin": "(^\\s*)(lelfield)",
+                "begin": "(^\\s*)(lelfield)(?=[\\s\\=])",
                 "beginCaptures": {
                     "2": { "name": "variable.parameter.declaration.tag-lelfield.namelist-control.pwx.espresso-in" }
                 },
@@ -327,7 +327,7 @@
         },
         "tag-nberrycyc.namelist-control.pwx": {
             "patterns": [{
-                "begin": "(^\\s*)(nberrycyc)",
+                "begin": "(^\\s*)(nberrycyc)(?=[\\s\\=])",
                 "beginCaptures": {
                     "2": { "name": "variable.parameter.declaration.tag-nberrycyc.namelist-control.pwx.espresso-in" }
                 },
@@ -339,7 +339,7 @@
         },
         "tag-lorbm.namelist-control.pwx": {
             "patterns": [{
-                "begin": "(^\\s*)(lorbm)",
+                "begin": "(^\\s*)(lorbm)(?=[\\s\\=])",
                 "beginCaptures": {
                     "2": { "name": "variable.parameter.declaration.tag-lorbm.namelist-control.pwx.espresso-in" }
                 },
@@ -351,7 +351,7 @@
         },
         "tag-lberry.namelist-control.pwx": {
             "patterns": [{
-                "begin": "(^\\s*)(lberry)",
+                "begin": "(^\\s*)(lberry)(?=[\\s\\=])",
                 "beginCaptures": {
                     "2": { "name": "variable.parameter.declaration.tag-lberry.namelist-control.pwx.espresso-in" }
                 },
@@ -363,7 +363,7 @@
         },
         "tag-gdir.namelist-control.pwx": {
             "patterns": [{
-                "begin": "(^\\s*)(gdir)",
+                "begin": "(^\\s*)(gdir)(?=[\\s\\=])",
                 "beginCaptures": {
                     "2": { "name": "variable.parameter.declaration.tag-gdir.namelist-control.pwx.espresso-in" }
                 },
@@ -375,7 +375,7 @@
         },
         "tag-nppstr.namelist-control.pwx": {
             "patterns": [{
-                "begin": "(^\\s*)(nppstr)",
+                "begin": "(^\\s*)(nppstr)(?=[\\s\\=])",
                 "beginCaptures": {
                     "2": { "name": "variable.parameter.declaration.tag-nppstr.namelist-control.pwx.espresso-in" }
                 },
@@ -387,7 +387,7 @@
         },
         "tag-lfcp.namelist-control.pwx": {
             "patterns": [{
-                "begin": "(^\\s*)(lfcp)",
+                "begin": "(^\\s*)(lfcp)(?=[\\s\\=])",
                 "beginCaptures": {
                     "2": { "name": "variable.parameter.declaration.tag-lfcp.namelist-control.pwx.espresso-in" }
                 },
@@ -399,7 +399,7 @@
         },
         "tag-gate.namelist-control.pwx": {
             "patterns": [{
-                "begin": "(^\\s*)(gate)",
+                "begin": "(^\\s*)(gate)(?=[\\s\\=])",
                 "beginCaptures": {
                     "2": { "name": "variable.parameter.declaration.tag-gate.namelist-control.pwx.espresso-in" }
                 },

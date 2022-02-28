@@ -6,16 +6,46 @@
 			"include": "#namelist-control"
 		},
 		{
+			"include": "#namelist-system"
+		},
+		{
+			"include": "#namelist-electrons"
+		},
+		{
+			"include": "#namelist-ions"
+		},
+		{
+			"include": "#namelist-cell"
+		},
+		{
+			"include": "#namelist-fcp"
+		},
+		{
 			"include": "#card-atomic_species"
 		},
 		{
 			"include": "#card-atomic_positions"
 		},
 		{
+			"include": "#card-k_points"
+		},
+		{
+			"include": "#card-additional_k_points"
+		},
+		{
 			"include": "#card-cell_parameters"
 		},
 		{
-			"include": "#card-k_points"
+			"include": "#card-constraints"
+		},
+		{
+			"include": "#card-occupations"
+		},
+		{
+			"include": "#card-atomic_velocities"
+		},
+		{
+			"include": "#card-atomic_forces"
 		}
 	],
 	"repository": {
@@ -27,6 +57,56 @@
 				},
 				"end": "^\\s*\/\\s*$",
 				"name": "entity.name.tag.content.namelist-control.pwx.espresso-in"
+			}]
+		},
+		"namelist-system": {
+			"patterns": [{
+				"begin": "^\\s*&(?i)SYSTEM\\s*$",
+				"beginCaptures": {
+					"0": { "name": "entity.name.tag.header.namelist-system.pwx.espresso-in" }
+				},
+				"end": "^\\s*\/\\s*$",
+				"name": "entity.name.tag.content.namelist-system.pwx.espresso-in"
+			}]
+		},
+		"namelist-electrons": {
+			"patterns": [{
+				"begin": "^\\s*&(?i)ELECTRONS\\s*$",
+				"beginCaptures": {
+					"0": { "name": "entity.name.tag.header.namelist-electrons.pwx.espresso-in" }
+				},
+				"end": "^\\s*\/\\s*$",
+				"name": "entity.name.tag.content.namelist-electrons.pwx.espresso-in"
+			}]
+		},
+		"namelist-ions": {
+			"patterns": [{
+				"begin": "^\\s*&(?i)IONS\\s*$",
+				"beginCaptures": {
+					"0": { "name": "entity.name.tag.header.namelist-ions.pwx.espresso-in" }
+				},
+				"end": "^\\s*\/\\s*$",
+				"name": "entity.name.tag.content.namelist-ions.pwx.espresso-in"
+			}]
+		},
+		"namelist-cell": {
+			"patterns": [{
+				"begin": "^\\s*&(?i)CELL\\s*$",
+				"beginCaptures": {
+					"0": { "name": "entity.name.tag.header.namelist-cell.pwx.espresso-in" }
+				},
+				"end": "^\\s*\/\\s*$",
+				"name": "entity.name.tag.content.namelist-cell.pwx.espresso-in"
+			}]
+		},
+		"namelist-fcp": {
+			"patterns": [{
+				"begin": "^\\s*&(?i)FCP\\s*$",
+				"beginCaptures": {
+					"0": { "name": "entity.name.tag.header.namelist-fcp.pwx.espresso-in" }
+				},
+				"end": "^\\s*\/\\s*$",
+				"name": "entity.name.tag.content.namelist-fcp.pwx.espresso-in"
 			}]
 		},
 		"card-atomic_species": {
@@ -60,6 +140,65 @@
 				}
 			}]
 		},
+		"card-k_points": {
+			"patterns": [
+				{
+					"begin": "(^\\s*)((?i)k_points)(\\s(\\{(?=\\w*\\})|\\((?=\\w*\\))|(?![\\{\\(]))(tpiba|crystal|tpiba_b|crystal_b|tpiba_c|crystal_c)(\\}|\\)|))\\s*$",
+					"beginCaptures": {
+						"0": { "name": "entity.name.tag.header.card-k_points.pwx.espresso-in" },
+						"5": { "name": "entity.other.attribute.type.card-k_points.pwx.espresso-in" }
+					},
+					"while": "(^\\s*)((\\d+)(\\s*$)|(\\-?\\d+\\.?\\d*)(\\s+)(\\-?\\d+\\.?\\d*)(\\s+)(\\-?\\d+\\.?\\d*)(\\s+)(\\d+\\.?\\d*)(\\s*$))",
+					"whileCaptures": {
+						"3": { "name": "constant.numeric.number-of-k_points.card-k_points.pwx.espresso-in" },
+						"5": { "name": "constant.numeric.k_points-x.card-k_points.pwx.espresso-in" },
+						"7": { "name": "constant.numeric.k_points-y.card-k_points.pwx.espresso-in" },
+						"9": { "name": "constant.numeric.k_points-z.card-k_points.pwx.espresso-in" },
+						"11": { "name": "constant.numeric.k_points-weight.card-k_points.pwx.espresso-in" }
+					}
+				},
+				{
+					"begin": "(^\\s*)((?i)k_points)(\\s(\\{(?=\\w*\\})|\\((?=\\w*\\))|(?![\\{\\(]))(automatic)(\\}|\\)|))\\s*$",
+					"beginCaptures": {
+						"0": { "name": "entity.name.tag.header.card-k_points.pwx.espresso-in" },
+						"5": { "name": "entity.other.attribute.type.card-k_points.pwx.espresso-in" }
+					},
+					"end": "(^\\s*)(\\d+)(\\s+)(\\d+)(\\s+)(\\d+)(\\s+)([01])(\\s+)([01])(\\s+)([01])(\\s*$)",
+					"endCaptures": {
+						"2": { "name": "constant.numeric.nk1.monkhorst-pack-grid.card-k_points.pwx.espresso-in" },
+						"4": { "name": "constant.numeric.nk2.monkhorst-pack-grid.card-k_points.pwx.espresso-in" },
+						"6": { "name": "constant.numeric.nk3.monkhorst-pack-grid.card-k_points.pwx.espresso-in" },
+						"8": { "name": "entity.other.attribute.shiftk1.monkhorst-pack-grid.card-k_points.pwx.espresso-in" },
+						"10": { "name": "entity.other.attribute.shiftk2.monkhorst-pack-grid.card-k_points.pwx.espresso-in" },
+						"12": { "name": "entity.other.attribute.shiftk3.monkhorst-pack-grid.card-k_points.pwx.espresso-in" }
+					}
+				},
+				{
+					"begin": "(^\\s*)((?i)k_points)(\\s(\\{(?=\\w*\\})|\\((?=\\w*\\))|(?![\\{\\(]))(gamma)(\\}|\\)|))\\s*$",
+					"beginCaptures": {
+						"0": { "name": "entity.name.tag.header.card-k_points.pwx.espresso-in" },
+						"5": { "name": "entity.other.attribute.type.card-k_points.pwx.espresso-in" }
+					}
+				}
+			]
+		},
+		"card-additional_k_points": {
+			"patterns": [{
+				"begin": "(^\\s*)((?i)additional_k_points)(\\s(\\{(?=\\w*\\})|\\((?=\\w*\\))|(?![\\{\\(]))(tpiba|crystal|tpiba_b|crystal_b|tpiba_c|crystal_c)(\\}|\\)|))\\s*$",
+				"beginCaptures": {
+					"0": { "name": "entity.name.tag.header.card-additional_k_points.pwx.espresso-in" },
+					"5": { "name": "entity.other.attribute.type.card-additional_k_points.pwx.espresso-in" }
+				},
+				"while": "(^\\s*)((\\d+)(\\s*$)|(\\-?\\d+\\.?\\d*)(\\s+)(\\-?\\d+\\.?\\d*)(\\s+)(\\-?\\d+\\.?\\d*)(\\s+)(\\d+\\.?\\d*)(\\s*$))",
+				"whileCaptures": {
+					"3": { "name": "constant.numeric.number-of-k_points.card-additional_k_points.pwx.espresso-in" },
+					"5": { "name": "constant.numeric.k_points-x.card-additional_k_points.pwx.espresso-in" },
+					"7": { "name": "constant.numeric.k_points-y.card-additional_k_points.pwx.espresso-in" },
+					"9": { "name": "constant.numeric.k_points-z.card-additional_k_points.pwx.espresso-in" },
+					"11": { "name": "constant.numeric.k_points-weight.card-additional_k_points.pwx.espresso-in" }
+				}
+			}]
+		},
 		"card-cell_parameters": {
 			"patterns": [{
 				"begin": "(^\\s*)((?i)cell_parameters)(\\s(\\{(?=\\w*\\})|\\((?=\\w*\\)))(alat|bohr|angstrom)(\\}|\\)))?\\s*$",
@@ -75,43 +214,68 @@
 				}
 			}]
 		},
-		"card-k_points": {
-			"patterns": [
-				{
-					"begin": "(^\\s*)((?i)k_points)(\\s(\\{(?=\\w*\\})|\\((?=\\w*\\))|(?![\\{\\(]))(tpiba|crystal|tpiba_b|crystal_b|tpiba_c|crystal_c)(\\}|\\)|))\\s*$",
-					"beginCaptures": {
-						"0": { "name": "entity.name.tag.header.card-k_points.pwx.espresso-in" },
-						"5": { "name": "entity.other.attribute.type.card-k_points.pwx.espresso-in" }
-					},
-					"while": "(^\\s*)(\\d*\\s*$|(\\-?\\d*\\.?\\d*)(\\s+)(\\-?\\d*\\.?\\d*)(\\s+)(\\-?\\d*\\.?\\d*)(\\s+)(\\d*\\.?\\d*)(\\s*$))",
-					"whileCaptures": {
-						"2": { "name": "constant.numeric.value.card-k_points.pwx.espresso-in" }
-					}
+		"card-constraints": {
+			"patterns": [{
+				"begin": "(^\\s*)((?i)constraints)\\s*$",
+				"beginCaptures": {
+					"0": { "name": "entity.name.tag.header.card-constraints.pwx.espresso-in" }
 				},
-				{
-					"begin": "(^\\s*)((?i)k_points)(\\s(\\{(?=\\w*\\})|\\((?=\\w*\\))|(?![\\{\\(]))(automatic)(\\}|\\)|))\\s*$",
-					"beginCaptures": {
-						"0": { "name": "entity.name.tag.header.card-k_points.pwx.espresso-in" },
-						"5": { "name": "entity.other.attribute.type.card-k_points.pwx.espresso-in" }
-					},
-					"end": "(^\\s*)(\\d+)(\\s+)(\\d+)(\\s+)(\\d+)(\\s+)([01])(\\s+)([01])(\\s+)([01])(\\s*$)",
-					"endCaptures": {
-						"2": { "name": "constant.numeric.value.monkhorst-pack-grid.card-k_points.pwx.espresso-in" },
-						"4": { "name": "constant.numeric.value.monkhorst-pack-grid.card-k_points.pwx.espresso-in" },
-						"6": { "name": "constant.numeric.value.monkhorst-pack-grid.card-k_points.pwx.espresso-in" },
-						"8": { "name": "entity.other.attribute.shift.monkhorst-pack-grid.card-k_points.pwx.espresso-in" },
-						"10": { "name": "entity.other.attribute.shift.monkhorst-pack-grid.card-k_points.pwx.espresso-in" },
-						"12": { "name": "entity.other.attribute.shift.monkhorst-pack-grid.card-k_points.pwx.espresso-in" }
-					}
-				},
-				{
-					"begin": "(^\\s*)((?i)k_points)(\\s(\\{(?=\\w*\\})|\\((?=\\w*\\))|(?![\\{\\(]))(gamma)(\\}|\\)|))\\s*$",
-					"beginCaptures": {
-						"0": { "name": "entity.name.tag.header.card-k_points.pwx.espresso-in" },
-						"5": { "name": "entity.other.attribute.type.card-k_points.pwx.espresso-in" }
-					}
+				"while": "(^\\s*)((\\d+)(\\s+\\{\\s*)(\\d+\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*\\}\\s*$)|(?i)(type_coord|atom_coord|distance|planar_angle|torsional_angle|bennet_proj)(\\s+)(\\-?\\d+\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s+)(\\-?\\d+\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s+\\[\\s*)(\\-?\\d+\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s+)(\\-?\\d+\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*\\]\\s+\\{\\s*)(\\-?\\d+\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*\\}\\s*$))",
+				"whileCaptures": {
+					"3": { "name": "constant.numeric.nconstr.card-constraints.pwx.espresso-in" },
+					"5": { "name": "constant.numeric.constr_tol.card-constraints.pwx.espresso-in" },
+					"7": { "name": "entity.other.attribute.constr_type.card-constraints.pwx.espresso-in" },
+					"9": { "name": "constant.numeric.constr_1.card-constraints.pwx.espresso-in" },
+					"11": { "name": "constant.numeric.constr_2.card-constraints.pwx.espresso-in" },
+					"13": { "name": "constant.numeric.constr_3.card-constraints.pwx.espresso-in" },
+					"15": { "name": "constant.numeric.constr_4.card-constraints.pwx.espresso-in" },
+					"17": { "name": "constant.numeric.constr_target.card-constraints.pwx.espresso-in" }
 				}
-			]
+			}]
+		},
+		"card-occupations": {
+			"patterns": [{
+				"begin": "(^\\s*)((?i)occupations)\\s*$",
+				"beginCaptures": {
+					"0": { "name": "entity.name.tag.header.card-occupations.pwx.espresso-in" }
+				},
+				"while": "((^\\s*)(\\d+\\.?\\d*(\\s+\\d+\\.?\\d*){0,9})(\\s*$)|(^\\s*\\[\\s*)(\\d+\\.?\\d*(\\s+\\d+\\.?\\d*){0,9})(\\s*\\]\\s*$))",
+				"whileCaptures": {
+					"3": { "name": "constant.numeric.individual-state.card-occupations.pwx.espresso-in" },
+					"7": { "name": "constant.numeric.minority-spin-state.card-occupations.pwx.espresso-in" }
+				}
+			}]
+		},
+		"card-atomic_velocities": {
+			"patterns": [{
+				"begin": "(^\\s*)((?i)atomic_velocities)(\\s(\\{(?=\\w*\\})|\\((?=\\w*\\))|(?![\\{\\(]))(a\\.u\\.)(\\}|\\)|))\\s*$",
+				"beginCaptures": {
+					"0": { "name": "entity.name.tag.header.card-atomic_velocities.pwx.espresso-in" },
+					"5": { "name": "entity.other.attribute.unit.card-atomic_velocities.pwx.espresso-in" }
+				},
+				"while": "(^\\s*)(H|He|Li|Be|B|C|N|O|F|Ne|Na|Mg|Al|Si|P|S|Cl|Ar|K|Ca|Sc|Ti|V|Cr|Mn|Fe|Co|Ni|Cu|Zn|Ga|Ge|As|Se|Br|Kr|Rb|Sr|Y|Zr|Nb|Mo|Tc|Ru|Rh|Pd|Ag|Cd|In|Sn|Sb|Te|I|Xe|Cs|Ba|La|Ce|Pr|Nd|Pm|Sm|Eu|Gd|Tb|Dy|Ho|Er|Tm|Yb|Lu|Hf|Ta|W|Re|Os|Ir|Pt|Au|Hg|Tl|Pb|Bi|Po|At|Rn|Fr|Ra|Ac|Th|Pa|U|Np|Pu|Am|Cm|Bk|Cf|Es|Fm|Md|No|Lr|Rf|Db|Sg|Bh|Hs|Mt|Ds|Rg|Cn|Nh|Fl|Mc|Lv|Ts|Og)(\\s+)(\\-?\\d+\\.?\\d*)(\\s+)(\\-?\\d+\\.?\\d*)(\\s+)(\\-?\\d+\\.?\\d*)(\\s*$|\\s+[01]\\s+[01]\\s+[01]\\s*$)",
+				"whileCaptures": {
+					"2": { "name": "entity.other.attribute.atom-symbol.card-atomic_velocities.pwx.espresso-in" },
+					"4": { "name": "constant.numeric.atom-velocity.x-component.card-atomic_velocities.pwx.espresso-in" },
+					"6": { "name": "constant.numeric.atom-velocity.y-component.card-atomic_velocities.pwx.espresso-in" },
+					"8": { "name": "constant.numeric.atom-velocity.z-component.card-atomic_velocities.pwx.espresso-in" }
+				}
+			}]
+		},
+		"card-atomic_forces": {
+			"patterns": [{
+				"begin": "(^\\s*)((?i)atomic_forces)\\s*$",
+				"beginCaptures": {
+					"0": { "name": "entity.name.tag.header.card-atomic_forces.pwx.espresso-in" }
+				},
+				"while": "(^\\s*)(H|He|Li|Be|B|C|N|O|F|Ne|Na|Mg|Al|Si|P|S|Cl|Ar|K|Ca|Sc|Ti|V|Cr|Mn|Fe|Co|Ni|Cu|Zn|Ga|Ge|As|Se|Br|Kr|Rb|Sr|Y|Zr|Nb|Mo|Tc|Ru|Rh|Pd|Ag|Cd|In|Sn|Sb|Te|I|Xe|Cs|Ba|La|Ce|Pr|Nd|Pm|Sm|Eu|Gd|Tb|Dy|Ho|Er|Tm|Yb|Lu|Hf|Ta|W|Re|Os|Ir|Pt|Au|Hg|Tl|Pb|Bi|Po|At|Rn|Fr|Ra|Ac|Th|Pa|U|Np|Pu|Am|Cm|Bk|Cf|Es|Fm|Md|No|Lr|Rf|Db|Sg|Bh|Hs|Mt|Ds|Rg|Cn|Nh|Fl|Mc|Lv|Ts|Og)(\\s+)(\\-?\\d+\\.?\\d*)(\\s+)(\\-?\\d+\\.?\\d*)(\\s+)(\\-?\\d+\\.?\\d*)(\\s*$|\\s+[01]\\s+[01]\\s+[01]\\s*$)",
+				"whileCaptures": {
+					"2": { "name": "entity.other.attribute.atom-symbol.card-atomic_forces.pwx.espresso-in" },
+					"4": { "name": "constant.numeric.force.x-component.card-atomic_forces.pwx.espresso-in" },
+					"6": { "name": "constant.numeric.force.y-component.card-atomic_forces.pwx.espresso-in" },
+					"8": { "name": "constant.numeric.force.z-component.card-atomic_forces.pwx.espresso-in" }
+				}
+			}]
 		}
 	},
 	"scopeName": "source.espresso-in"

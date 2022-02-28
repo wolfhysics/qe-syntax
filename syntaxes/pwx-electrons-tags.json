@@ -1,0 +1,370 @@
+{
+    "scopeName": "pwx-electrons-tags.injection",
+    "injectionSelector": "L:entity.name.tag.content.namelist-electrons.pwx.espresso-in",
+    "patterns": [
+        {
+            "include": "#tag-electron_maxstep.namelist-electrons.pwx"
+        },
+        {
+            "include": "#tag-scf_must_converge.namelist-electrons.pwx"
+        },
+        {
+            "include": "#tag-conv_thr.namelist-electrons.pwx"
+        },
+        {
+            "include": "#tag-adaptive_thr.namelist-electrons.pwx"
+        },
+        {
+            "include": "#tag-conv_thr_init.namelist-electrons.pwx"
+        },
+        {
+            "include": "#tag-conv_thr_multi.namelist-electrons.pwx"
+        },
+        {
+            "include": "#tag-mixing_mode.namelist-electrons.pwx"
+        },
+        {
+            "include": "#tag-mixing_beta.namelist-electrons.pwx"
+        },
+        {
+            "include": "#tag-mixing_ndim.namelist-electrons.pwx"
+        },
+        {
+            "include": "#tag-mixing_fixed_ns.namelist-electrons.pwx"
+        },
+        {
+            "include": "#tag-diagonalization.namelist-electrons.pwx"
+        },
+        {
+            "include": "#tag-diago_thr_init.namelist-electrons.pwx"
+        },
+        {
+            "include": "#tag-diago_cg_maxiter.namelist-electrons.pwx"
+        },
+        {
+            "include": "#tag-diago_david_ndim.namelist-electrons.pwx"
+        },
+        {
+            "include": "#tag-diago_full_acc.namelist-electrons.pwx"
+        },
+        {
+            "include": "#tag-diago_rmm_ndim.namelist-electrons.pwx"
+        },
+        {
+            "include": "#tag-diago_rmm_conv.namelist-electrons.pwx"
+        },
+        {
+            "include": "#tag-efield.namelist-electrons.pwx"
+        },
+        {
+            "include": "#tag-efield_cart.namelist-electrons.pwx"
+        },
+        {
+            "include": "#tag-efield_phase.namelist-electrons.pwx"
+        },
+        {
+            "include": "#tag-startingpot.namelist-electrons.pwx"
+        },
+        {
+            "include": "#tag-startingwfc.namelist-electrons.pwx"
+        },
+        {
+            "include": "#tag-tqr.namelist-electrons.pwx"
+        },
+        {
+            "include": "#tag-real_space.namelist-electrons.pwx"
+        }
+    ],
+    "repository": {
+        "tag-electron_maxstep.namelist-electrons.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(electron_maxstep)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-electron_maxstep.namelist-electrons.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-electron_maxstep.namelist-electrons.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-scf_must_converge.namelist-electrons.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(scf_must_converge)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-scf_must_converge.namelist-electrons.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\.(?i)(true|false)\\.)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "entity.other.attribute.tag-scf_must_converge.namelist-electrons.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-conv_thr.namelist-electrons.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(conv_thr)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-conv_thr.namelist-electrons.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\-?\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-conv_thr.namelist-electrons.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-adaptive_thr.namelist-electrons.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(adaptive_thr)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-adaptive_thr.namelist-electrons.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\.(?i)(true|false)\\.)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "entity.other.attribute.tag-adaptive_thr.namelist-electrons.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-conv_thr_init.namelist-electrons.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(conv_thr_init)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-conv_thr_init.namelist-electrons.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\-?\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-conv_thr_init.namelist-electrons.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-conv_thr_multi.namelist-electrons.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(conv_thr_multi)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-conv_thr_multi.namelist-electrons.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\-?\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-conv_thr_multi.namelist-electrons.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-mixing_mode.namelist-electrons.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(mixing_mode)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-mixing_mode.namelist-electrons.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\'(plain|TF|local\\-TF)\\')(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "entity.other.attribute.tag-mixing_mode.namelist-electrons.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-mixing_beta.namelist-electrons.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(mixing_beta)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-mixing_beta.namelist-electrons.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\-?\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-mixing_beta.namelist-electrons.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-mixing_ndim.namelist-electrons.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(mixing_ndim)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-mixing_ndim.namelist-electrons.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-mixing_ndim.namelist-electrons.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-mixing_fixed_ns.namelist-electrons.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(mixing_fixed_ns)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-mixing_fixed_ns.namelist-electrons.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-mixing_fixed_ns.namelist-electrons.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-diagonalization.namelist-electrons.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(diagonalization)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-diagonalization.namelist-electrons.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\'(david|cg|ppcg|paro|ParO|rmm\\-davidson|rmm\\-paro)\\')(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "entity.other.attribute.tag-diagonalization.namelist-electrons.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-diago_thr_init.namelist-electrons.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(diago_thr_init)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-diago_thr_init.namelist-electrons.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\-?\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-diago_thr_init.namelist-electrons.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-diago_cg_maxiter.namelist-electrons.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(diago_cg_maxiter)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-diago_cg_maxiter.namelist-electrons.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-diago_cg_maxiter.namelist-electrons.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-diago_david_ndim.namelist-electrons.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(diago_david_ndim)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-diago_david_ndim.namelist-electrons.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-diago_david_ndim.namelist-electrons.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-diago_full_acc.namelist-electrons.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(diago_full_acc)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-diago_full_acc.namelist-electrons.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\.(?i)(true|false)\\.)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "entity.other.attribute.tag-diago_full_acc.namelist-electrons.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-diago_rmm_ndim.namelist-electrons.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(diago_rmm_ndim)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-diago_rmm_ndim.namelist-electrons.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-diago_rmm_ndim.namelist-electrons.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-diago_rmm_conv.namelist-electrons.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(diago_rmm_conv)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-diago_rmm_conv.namelist-electrons.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\.(?i)(true|false)\\.)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "entity.other.attribute.tag-diago_rmm_conv.namelist-electrons.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-efield.namelist-electrons.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(efield)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-efield.namelist-electrons.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\-?\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-efield.namelist-electrons.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-efield_cart.namelist-electrons.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(efield_cart\\()([1-3])(\\))(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-efield_cart.namelist-electrons.pwx.espresso-in" },
+                    "3": { "name": "entity.other.attribute.vector.tag-efield_cart.namelist-electrons.pwx.espresso-in" },
+                    "4": { "name": "variable.parameter.declaration.tag-efield_cart.namelist-electrons.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\-?\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-efield_cart.namelist-electrons.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-efield_phase.namelist-electrons.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(efield_phase)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-efield_phase.namelist-electrons.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\'(read|write|none)\\')(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "entity.other.attribute.tag-efield_phase.namelist-electrons.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-startingpot.namelist-electrons.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(startingpot)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-startingpot.namelist-electrons.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\'(atomic|file)\\')(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "entity.other.attribute.tag-startingpot.namelist-electrons.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-startingwfc.namelist-electrons.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(startingwfc)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-startingwfc.namelist-electrons.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\'(atomic|atomic\\+random|random|file)\\')(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "entity.other.attribute.tag-startingwfc.namelist-electrons.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-tqr.namelist-electrons.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(tqr)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-tqr.namelist-electrons.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\.(?i)(true|false)\\.)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "entity.other.attribute.tag-tqr.namelist-electrons.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-real_space.namelist-electrons.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(real_space)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-real_space.namelist-electrons.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\.(?i)(true|false)\\.)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "entity.other.attribute.tag-real_space.namelist-electrons.pwx.espresso-in" }
+                }
+            }]
+        }
+    }
+}

@@ -1,0 +1,36 @@
+        {
+            "include": "#tag-fcp_mu.namelist-fcp.pwx"
+        },
+        {
+            "include": "#tag-fcp_dynamics.namelist-fcp.pwx"
+        },
+        {
+            "include": "#tag-fcp_conv_thr.namelist-fcp.pwx"
+        },
+        {
+            "include": "#tag-fcp_ndiis.namelist-fcp.pwx"
+        },
+        {
+            "include": "#tag-fcp_mass.namelist-fcp.pwx"
+        },
+        {
+            "include": "#tag-fcp_velocity.namelist-fcp.pwx"
+        },
+        {
+            "include": "#tag-fcp_temperature.namelist-fcp.pwx"
+        },
+        {
+            "include": "#tag-fcp_tempw.namelist-fcp.pwx"
+        },
+        {
+            "include": "#tag-fcp_tolp.namelist-fcp.pwx"
+        },
+        {
+            "include": "#tag-fcp_delta_t.namelist-fcp.pwx"
+        },
+        {
+            "include": "#tag-fcp_nraise.namelist-fcp.pwx"
+        },
+        {
+            "include": "#tag-freeze_all_atoms.namelist-fcp.pwx"
+        },

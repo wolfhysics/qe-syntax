@@ -1,0 +1,1678 @@
+{
+    "scopeName": "pwx-system-tags.injection",
+    "injectionSelector": "L:entity.name.tag.content.namelist-system.pwx.espresso-in",
+    "patterns": [
+        {
+            "include": "#tag-ibrav.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-celldm.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-A.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-B.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-C.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-cosAB.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-cosAC.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-cosBC.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-nat.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-ntyp.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-nbnd.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-tot_charge.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-starting_charge.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-tot_magnetization.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-starting_magnetization.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-ecutwfc.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-ecutrho.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-ecutfock.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-nr1.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-nr2.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-nr3.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-nr1s.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-nr2s.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-nr3s.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-nosym.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-nosym_evc.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-noinv.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-no_t_rev.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-force_symmorphic.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-use_all_frac.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-occupations.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-one_atom_occupations.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-starting_spin_angle.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-degauss.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-smearing.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-nspin.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-noncolin.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-ecfixed.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-qcutz.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-q2sigma.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-input_dft.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-ace.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-exx_fraction.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-screening_parameter.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-exxdiv_treatment.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-x_gamma_extrapolation.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-ecutvcut.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-nqx1.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-nqx2.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-nqx3.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-localization_thr.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-lda_plus_u.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-lda_plus_u_kind.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-Hubbard_U.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-Hubbard_J0.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-Hubbard_V.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-Hubbard_alpha.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-Hubbard_beta.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-Hubbard_J.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-starting_ns_eigenvalue.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-U_projection_type.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-Hubbard_parameters.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-dmft.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-dmft_prefix.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-ensemble_energies.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-edir.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-emaxpos.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-eopreg.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-eamp.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-angle1.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-angle2.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-lforcet.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-constrained_magnetization.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-fixed_magnetization.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-lambda.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-report.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-lspinorb.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-assume_isolated.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-esm_bc.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-esm_w.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-esm_efield.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-esm_nfit.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-lgcscf.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-gcscf_mu.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-gcscf_conv_thr.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-gcscf_beta.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-vdw_corr.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-london.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-london_s6.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-london_c6.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-london_rvdw.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-london_rcut.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-dftd3_version.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-dftd3_threebody.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-ts_vdw_econv_thr.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-ts_vdw_isolated.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-xdm.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-xdm_a1.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-xdm_a2.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-space_group.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-uniqueb.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-origin_choice.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-rhombohedral.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-zgate.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-relaxz.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-block.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-block_1.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-block_2.namelist-system.pwx"
+        },
+        {
+            "include": "#tag-block_height.namelist-system.pwx"
+        }
+    ],
+    "repository": {
+        "tag-ibrav.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(ibrav)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-ibrav.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(0|1|2|\\-?3|4|\\-?5|6|7|8|\\-?91?|10|11|\\-?12|\\-?13|14)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "entity.other.attribute.bravais-type.tag-ibrav.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-celldm.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(celldm\\()([1-6])(\\))(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-celldm.namelist-system.pwx.espresso-in" },
+                    "3": { "name": "entity.other.attribute.tag-celldm.namelist-system.pwx.espresso-in" },
+                    "4": { "name": "variable.parameter.declaration.tag-celldm.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\-?\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-celldm.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-A.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(A|a)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-A.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-A.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-B.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(B|b)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-B.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-B.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-C.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(C|c)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-C.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-C.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-cosAB.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(cosAB)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-cosAB.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\-?\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-cosAB.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-cosAC.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(cosAC)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-cosAC.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\-?\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-cosAC.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-cosBC.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(cosBC)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-cosBC.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\-?\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-cosBC.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-nat.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(nat)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-nat.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-nat.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-ntyp.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(ntyp)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-ntyp.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-ntyp.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-nbnd.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(nbnd)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-nbnd.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-nbnd.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-tot_charge.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(tot_charge)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-tot_charge.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\-?\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-tot_charge.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-starting_charge.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(starting_charge\\()(\\d+)(\\))(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-starting_charge.namelist-system.pwx.espresso-in" },
+                    "3": { "name": "constant.numeric.i_ntyp.tag-starting_charge.namelist-system.pwx.espresso-in" },
+                    "4": { "name": "variable.parameter.declaration.tag-starting_charge.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\-?\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-starting_charge.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-tot_magnetization.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(tot_magnetization)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-tot_magnetization.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\-?\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-tot_magnetization.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-starting_magnetization.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(starting_magnetization\\()(\\d+)(\\))(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-starting_magnetization.namelist-system.pwx.espresso-in" },
+                    "3": { "name": "constant.numeric.i_ntyp.tag-starting_magnetization.namelist-system.pwx.espresso-in" },
+                    "4": { "name": "variable.parameter.declaration.tag-starting_magnetization.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\-?\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-starting_magnetization.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-ecutwfc.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(ecutwfc)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-ecutwfc.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-ecutwfc.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-ecutrho.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(ecutrho)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-ecutrho.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-ecutrho.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-ecutfock.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(ecutfock)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-ecutfock.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-ecutfock.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-nr1.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(nr1)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-nr1.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-nr1.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-nr2.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(nr2)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-nr2.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-nr2.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-nr3.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(nr1)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-nr3.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-nr3.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-nr1s.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(nr1s)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-nr1s.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-nr1s.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-nr2s.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(nr2s)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-nr2s.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-nr2s.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-nr3s.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(nr1s)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-nr3s.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-nr3s.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-nosym.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(nosym)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-nosym.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\.(?i)(true|false)\\.)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "entity.other.attribute.tag-nosym.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-nosym_evc.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(nosym_evc)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-nosym_evc.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\.(?i)(true|false)\\.)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "entity.other.attribute.tag-nosym_evc.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-noinv.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(noinv)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-noinv.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\.(?i)(true|false)\\.)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "entity.other.attribute.tag-noinv.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-no_t_rev.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(no_t_rev)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-no_t_rev.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\.(?i)(true|false)\\.)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "entity.other.attribute.tag-no_t_rev.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-force_symmorphic.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(force_symmorphic)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-force_symmorphic.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\.(?i)(true|false)\\.)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "entity.other.attribute.tag-force_symmorphic.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-use_all_frac.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(use_all_frac)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-use_all_frac.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\.(?i)(true|false)\\.)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "entity.other.attribute.tag-use_all_frac.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-occupations.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(occupations)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-occupations.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\'(?i)(smearing|tetrahedra|tetrahedra_lin|tetrahedra_opt|fixed|from_input)\\')(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "entity.other.attribute.tag-occupations.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-one_atom_occupations.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(one_atom_occupations)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-one_atom_occupations.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\.(?i)(true|false)\\.)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "entity.other.attribute.tag-one_atom_occupations.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-starting_spin_angle.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(starting_spin_angle)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-starting_spin_angle.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\.(?i)(true|false)\\.)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "entity.other.attribute.tag-starting_spin_angle.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-degauss.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(degauss)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-degauss.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-degauss.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-smearing.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(smearing)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-smearing.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\'(?i)(gaussian|gauss|methfessel\\-paxton|m\\-?p|marzari-vanderbilt|cold|m\\-?v|fermi-dirac|f\\-?d)\\')(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "entity.other.attribute.tag-smearing.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-nspin.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(nspin)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-nspin.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(1|2|4)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "entity.other.attribute.tag-nspin.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-noncolin.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(noncolin)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-noncolin.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\.(?i)(true|false)\\.)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "entity.other.attribute.tag-noncolin.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-ecfixed.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(ecfixed)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-ecfixed.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\-?\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-ecfixed.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-qcutz.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(qcutz)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-qcutz.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\-?\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-qcutz.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-q2sigma.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(q2sigma)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-q2sigma.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\-?\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-q2sigma.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-input_dft.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(input_dft)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-input_dft.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\'(.*)\\')(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "string.quoted.tag-input_dft.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-ace.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(ace)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-ace.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\.(?i)(true|false)\\.)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "entity.other.attribute.tag-ace.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-exx_fraction.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(exx_fraction)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-exx_fraction.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\-?\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-exx_fraction.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-screening_parameter.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(screening_parameter)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-screening_parameter.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\-?\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-screening_parameter.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-exxdiv_treatment.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(exxdiv_treatment)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-exxdiv_treatment.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\'(?i)(gygi\\-baldereschi|vcut_spherical|vcut_ws|none)\\')(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "entity.other.attribute.tag-exxdiv_treatment.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-x_gamma_extrapolation.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(x_gamma_extrapolation)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-x_gamma_extrapolation.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\.(?i)(true|false)\\.)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "entity.other.attribute.tag-x_gamma_extrapolation.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-ecutvcut.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(ecutvcut)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-ecutvcut.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\-?\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-ecutvcut.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-nqx1.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(nqx1)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-nqx1.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-nqx1.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-nqx2.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(nqx2)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-nqx2.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-nqx2.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-nqx3.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(nqx3)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-nqx3.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-nqx3.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-localization_thr.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(localization_thr)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-localization_thr.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\-?\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-localization_thr.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-lda_plus_u.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(lda_plus_u)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-lda_plus_u.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\.(?i)(true|false)\\.)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "entity.other.attribute.tag-lda_plus_u.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-lda_plus_u_kind.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(lda_plus_u_kind)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-lda_plus_u_kind.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(0|1|2)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "entity.other.attribute.tag-lda_plus_u_kind.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-Hubbard_U.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(Hubbard_U\\()(\\d+)(\\))(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-Hubbard_U.namelist-system.pwx.espresso-in" },
+                    "3": { "name": "constant.numeric.i_ntyp.tag-Hubbard_U.namelist-system.pwx.espresso-in" },
+                    "4": { "name": "variable.parameter.declaration.tag-Hubbard_U.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\-?\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-Hubbard_U.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-Hubbard_J0.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(Hubbard_J0\\()(\\d+)(\\))(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-Hubbard_J0.namelist-system.pwx.espresso-in" },
+                    "3": { "name": "constant.numeric.i_ntyp.tag-Hubbard_J0.namelist-system.pwx.espresso-in" },
+                    "4": { "name": "variable.parameter.declaration.tag-Hubbard_J0.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\-?\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-Hubbard_J0.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-Hubbard_V.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(Hubbard_V\\()(\\d+)(\\,)(\\d+)(\\,)([1-4])(\\))(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-Hubbard_V.namelist-system.pwx.espresso-in" },
+                    "3": { "name": "constant.numeric.na.tag-Hubbard_V.namelist-system.pwx.espresso-in" },
+                    "5": { "name": "constant.numeric.nb.tag-Hubbard_V.namelist-system.pwx.espresso-in" },
+                    "7": { "name": "entity.other.attribute.k.tag-Hubbard_V.namelist-system.pwx.espresso-in" },
+                    "8": { "name": "variable.parameter.declaration.tag-Hubbard_V.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\-?\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-Hubbard_V.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-Hubbard_alpha.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(Hubbard_alpha\\()(\\d+)(\\))(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-Hubbard_alpha.namelist-system.pwx.espresso-in" },
+                    "3": { "name": "constant.numeric.i_ntyp.tag-Hubbard_alpha.namelist-system.pwx.espresso-in" },
+                    "4": { "name": "variable.parameter.declaration.tag-Hubbard_alpha.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\-?\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-Hubbard_alpha.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-Hubbard_beta.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(Hubbard_beta\\()(\\d+)(\\))(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-Hubbard_beta.namelist-system.pwx.espresso-in" },
+                    "3": { "name": "constant.numeric.i_ntyp.tag-Hubbard_beta.namelist-system.pwx.espresso-in" },
+                    "4": { "name": "variable.parameter.declaration.tag-Hubbard_beta.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\-?\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-Hubbard_beta.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-Hubbard_J.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(Hubbard_J\\()([1-3])(\\,)(\\d+)(\\))(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-Hubbard_J.namelist-system.pwx.espresso-in" },
+                    "3": { "name": "entity.other.attribute.i.tag-Hubbard_J.namelist-system.pwx.espresso-in" },
+                    "5": { "name": "constant.numeric.ityp.tag-Hubbard_J.namelist-system.pwx.espresso-in" },
+                    "6": { "name": "variable.parameter.declaration.tag-Hubbard_J.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\-?\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-Hubbard_J.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-starting_ns_eigenvalue.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(starting_ns_eigenvalue\\()(\\d+)(\\,)(\\d+)(\\,)([1-4])(\\))(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-starting_ns_eigenvalue.namelist-system.pwx.espresso-in" },
+                    "3": { "name": "constant.numeric.m.tag-starting_ns_eigenvalue.namelist-system.pwx.espresso-in" },
+                    "5": { "name": "constant.numeric.ispin.tag-starting_ns_eigenvalue.namelist-system.pwx.espresso-in" },
+                    "7": { "name": "constant.numeric.ityp.k.tag-starting_ns_eigenvalue.namelist-system.pwx.espresso-in" },
+                    "8": { "name": "variable.parameter.declaration.tag-starting_ns_eigenvalue.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\-?\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-starting_ns_eigenvalue.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-U_projection_type.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(U_projection_type)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-U_projection_type.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\'(?i)(atomic|ortho\\-atomic|norm\\-atomic|file|pesudo)\\')(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "entity.other.attribute.tag-U_projection_type.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-Hubbard_parameters.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(Hubbard_parameters)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-Hubbard_parameters.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\'(?i)(input|file)\\')(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "entity.other.attribute.tag-Hubbard_parameters.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-dmft.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(dmft)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-dmft.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\.(?i)(true|false)\\.)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "entity.other.attribute.tag-dmft.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-dmft_prefix.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(dmft_prefix)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-dmft_prefix.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\'(.*)\\')(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "string.quoted.tag-dmft_prefix.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-ensemble_energies.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(ensemble_energies)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-ensemble_energies.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\.(?i)(true|false)\\.)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "entity.other.attribute.tag-ensemble_energies.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-edir.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(edir)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-edir.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)([1-3])(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "entity.other.attribute.latt_vector.tag-edir.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-emaxpos.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(emaxpos)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-emaxpos.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\-?\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-emaxpos.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-eopreg.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(eopreg)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-eopreg.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\-?\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-eopreg.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-eamp.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(eamp)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-eamp.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\-?\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-eamp.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-angle1.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(angle1\\()(\\d+)(\\))(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-angle1.namelist-system.pwx.espresso-in" },
+                    "3": { "name": "constant.numeric.i_ntyp.tag-angle1.namelist-system.pwx.espresso-in" },
+                    "4": { "name": "variable.parameter.declaration.tag-angle1.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\-?\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-angle1.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-angle2.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(angle2\\()(\\d+)(\\))(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-angle2.namelist-system.pwx.espresso-in" },
+                    "3": { "name": "constant.numeric.i_ntyp.tag-angle2.namelist-system.pwx.espresso-in" },
+                    "4": { "name": "variable.parameter.declaration.tag-angle2.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\-?\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-angle2.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-lforcet.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(lforcet)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-lforcet.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\.(?i)(true|false)\\.)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "entity.other.attribute.tag-lforcet.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-constrained_magnetization.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(constrained_magnetization)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-constrained_magnetization.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\'(?i)(nonte|total|atomic|total direction|atomic direction)\\')(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "entity.other.attribute.tag-constrained_magnetization.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-fixed_magnetization.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(fixed_magnetization\\()([1-3]])(\\))(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-fixed_magnetization.namelist-system.pwx.espresso-in" },
+                    "3": { "name": "entity.other.attribute.vector.tag-fixed_magnetization.namelist-system.pwx.espresso-in" },
+                    "4": { "name": "variable.parameter.declaration.tag-fixed_magnetization.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\-?\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-fixed_magnetization.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-lambda.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(lambda)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-lambda.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\-?\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-lambda.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-report.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(report)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-report.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\-1|\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-report.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-lspinorb.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(lspinorb)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-lspinorb.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\.(?i)(true|false)\\.)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "entity.other.attribute.tag-lspinorb.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-assume_isolated.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(assume_isolated)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-assume_isolated.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\'(?i)(none|makov\\-payne|m\\-?p|martyna\\-tuckerman|m\\-?t|esm|2D)\\')(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "entity.other.attribute.tag-assume_isolated.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-esm_bc.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(esm_bc)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-esm_bc.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\'(?i)(pbc|bc1|bc2|bc3)\\')(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "entity.other.attribute.tag-esm_bc.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-esm_w.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(esm_w)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-esm_w.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\-?\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-esm_w.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-esm_efield.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(esm_efield)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-esm_efield.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\-?\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-esm_efield.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-esm_nfit.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(esm_nfit)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-esm_nfit.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-esm_nfit.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-lgcscf.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(lgcscf)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-lgcscf.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\.(?i)(true|false)\\.)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "entity.other.attribute.tag-lgcscf.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-gcscf_mu.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(gcscf_mu)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-gcscf_mu.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\-?\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-gcscf_mu.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-gcscf_conv_thr.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(gcscf_conv_thr)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-gcscf_conv_thr.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\-?\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-gcscf_conv_thr.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-gcscf_beta.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(gcscf_beta)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-gcscf_beta.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\-?\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-gcscf_beta.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-vdw_corr.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(vdw_corr)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-vdw_corr.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\'(grimme\\-d[23]|Grimme\\-D[23]|dft\\-d3?|DFT\\-D3?|TS|ts|ts\\-vd[wW]|tkatchenko\\-scheffler|mbd_vdw|many\\-body dispersion|XDM|xdm)\\')(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "entity.other.attribute.tag-vdw_corr.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-london.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(london)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-london.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\.(?i)(true|false)\\.)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "entity.other.attribute.tag-london.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-london_s6.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(london_s6)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-london_s6.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\-?\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-london_s6.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-london_c6.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(london_c6\\()(\\d+)(\\))(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-london_c6.namelist-system.pwx.espresso-in" },
+                    "3": { "name": "constant.numeric.i_ntyp.tag-london_c6.namelist-system.pwx.espresso-in" },
+                    "4": { "name": "variable.parameter.declaration.tag-london_c6.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\-?\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-london_c6.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-london_rvdw.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(london_rvdw\\()(\\d+)(\\))(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-london_rvdw.namelist-system.pwx.espresso-in" },
+                    "3": { "name": "constant.numeric.i_ntyp.tag-london_rvdw.namelist-system.pwx.espresso-in" },
+                    "4": { "name": "variable.parameter.declaration.tag-london_rvdw.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\-?\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-london_rvdw.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-london_rcut.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(london_rcut)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-london_rcut.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\-?\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-london_rcut.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-dftd3_version.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(dftd3_version)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-dftd3_version.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)([2-6])(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "entity.other.attribute.tag-dftd3_version.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-dftd3_threebody.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(dftd3_threebody)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-dftd3_threebody.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\.(?i)(true|false)\\.)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "entity.other.attribute.tag-dftd3_threebody.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-ts_vdw_econv_thr.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(ts_vdw_econv_thr)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-ts_vdw_econv_thr.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\-?\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-ts_vdw_econv_thr.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-ts_vdw_isolated.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(ts_vdw_isolated)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-ts_vdw_isolated.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\.(?i)(true|false)\\.)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "entity.other.attribute.tag-ts_vdw_isolated.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-xdm.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(xdm)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-xdm.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\.(?i)(true|false)\\.)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "entity.other.attribute.tag-xdm.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-xdm_a1.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(xdm_a1)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-xdm_a1.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\-?\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-xdm_a1.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-xdm_a2.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(xdm_a2)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-xdm_a2.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\-?\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-xdm_a2.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-space_group.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(space_group)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-space_group.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-space_group.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-uniqueb.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(uniqueb)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-uniqueb.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\.(?i)(true|false)\\.)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "entity.other.attribute.tag-uniqueb.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-origin_choice.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(origin_choice)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-origin_choice.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-origin_choice.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-rhombohedral.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(rhombohedral)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-rhombohedral.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\.(?i)(true|false)\\.)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "entity.other.attribute.tag-rhombohedral.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-zgate.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(zgate)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-zgate.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\-?\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-zgate.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-relaxz.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(relaxz)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-relaxz.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\.(?i)(true|false)\\.)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "entity.other.attribute.tag-relaxz.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-block.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(block)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-block.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\.(?i)(true|false)\\.)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "entity.other.attribute.tag-block.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-block_1.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(block_1)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-block_1.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\-?\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-block_1.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-block_2.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(block_2)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-block_2.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\-?\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-block_2.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        },
+        "tag-block_height.namelist-system.pwx": {
+            "patterns": [{
+                "begin": "(^\\s*)(block_height)(?=[\\s\\=])",
+                "beginCaptures": {
+                    "2": { "name": "variable.parameter.declaration.tag-block_height.namelist-system.pwx.espresso-in" }
+                },
+                "end": "(\\s*\\=\\s*)(\\-?\\d*\\.?\\d*(?i)[de]?[\\-\\+]?\\d*)(\\s*,?\\s*)$",
+                "endCaptures": {
+                    "2": { "name": "constant.numeric.tag-block_height.namelist-system.pwx.espresso-in" }
+                }
+            }]
+        }
+    }
+}
